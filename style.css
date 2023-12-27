@@ -4170,6 +4170,20 @@ body{
 	display:inline-block;
 	margin-left:4px;
 }
+
+
+@media (max-width:550px){
+	.logo a img{
+		height: 42px;
+		margin-top: 10px;
+	}
+	.header .header-inner {
+		padding-bottom: 5px !important;
+	}
+	.get-pro {
+		top: 15px !important;
+	}
+}
 /*=========================
 	End Footer CSS
 ===========================*/
