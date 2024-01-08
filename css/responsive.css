@@ -367,13 +367,6 @@ Version:	1.1
 	padding: 65px 0px;
 }
 
-
-
-
-
-
-
-
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
@@ -389,7 +382,8 @@ Version:	1.1
 	bottom: 0;
 }
 .mobile-nav-logo a img{
-	width: 50px;
+	width: 150px;
+	margin-top: 5px;
 }
 .slicknav_menu .slicknav_no-text {
 	margin-top: -10px;
@@ -398,7 +392,9 @@ Version:	1.1
 .infoDiv {
 	margin: 0;
 }
-
+.footerLinks{
+	display: none;
+}
 .slicknav_nav .slicknav_row, .slicknav_nav:last-child {
 	margin-bottom: 50px;
 }
@@ -417,13 +413,10 @@ Version:	1.1
 	padding-bottom: 20px;
 	background: #fff;
 }
-.slicknav_menu{
-	display:block;
-}
 .slicknav_menu {
 	display: block;
 	background: transparent;
-	padding: 0;
+	padding:8px 0 0 0 !important;
 }
 .slicknav_btn {
 	background: transparent;

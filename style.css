@@ -313,13 +313,11 @@ body{
 	color:#fff;
 }
 .header .logo {
-	width: 100px;
+	width: 300px;
 	border-radius: 50%;
 	float: left;
-	margin: 5px 0;
+	margin: 0;
 	display:flex;
-
-
 }
 .header .navbar {
 	background: none;
@@ -562,22 +560,18 @@ body{
 	background: #fff;
 	color: #2C2D3F;
 }
-.header .search-form button {
-	position: absolute;
-	right: 0;
-	height: 50px;
-	top: 0;
-	width: 50px;
+#login {
+	padding: 8px 12px !important;
 	background: #1A76D1;
 	border: none;
 	color: #fff;
-	border-radius: 0 4px 4px 0;
-	border-left:1px solid transparent;
+	border-radius:6px;
+	border:1px solid transparent;
 }
-.header .search-form button:hover{
+#login:hover{
 	background:#fff;
 	color:#1A76D1;
-	border-color:#e6e6e6;
+	border-color:#1A76D1;
 }
 /* Header Sticky */
 .header.sticky .header-inner{
@@ -706,13 +700,14 @@ body{
 ===============================*/
 .schedule {
 	background: #fff;
-	margin: 0;
+	margin: 0 0 25px 0;
 	padding: 0;
 	height: 230px;
 }
 .schedule .schedule-inner {
+	cursor: pointer;
 	position: relative;
-	transform: translateY(-50%);
+	transform: translateY(-15%);
 	z-index:9;
 }
 .schedule .single-schedule {
@@ -1220,6 +1215,8 @@ body{
 	
 	height:100%;
 	width:100%;
+	border: 2px solid #1a76d1;
+	border-radius: 8px;
 }
 .portfolio .single-pf:before{
 	position:absolute;
@@ -1229,6 +1226,8 @@ body{
 	height:100%;
 	width:100%;
 	background:#1a76d1;
+	border: 2px solid #1a76d1;
+	border-radius: 8px;
 	opacity:0;
 	visibility:hidden;
 	-webkit-transition:all 0.4s ease;
