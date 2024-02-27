@@ -857,7 +857,6 @@ body {
 .infoBox {
   flex: 0 0 30.333333%;
   max-width: 30.333333%;
-
   border: 2px solid #fff;
   border-radius: 0px;
   background-color: #fff;
@@ -865,6 +864,7 @@ body {
   margin: 10px 0px;
   height: 380px;
   position: relative;
+
 }
 .infoBox ol {
   height: 300px;
@@ -878,54 +878,40 @@ body {
   color: #121521;
   padding: 6px 4px;
   margin: 5px 0;
-  height: 75px;
+  /* height: 75px; */
   font-size: 14px;
   font-weight: 500;
+  text-align: left;
   overflow-x: scroll;
   scrollbar-width: none;
   cursor: pointer;
-  /* border-bottom: 1px solid rgba(128, 128, 128, 0.151);
-  border-radius: 0px; */
-  transition: all 0.3s ease;
-  z-index: 0;
-}
-
-.infoBox ol li span{
-	color: #132f57;
-	padding: 8px;
-	font-size: 16px;
-	border: 1px solid red !important;
-	margin: 15px;
-	margin: 78px 	;
-	z-index: 1;
-}
-/* .infoBox ol li {
-  background-color: #1a76d1;
-  padding: 6px 4px;
-  margin: 5px 0;
-  font-size: 14px;
-  font-weight: 500;
-  overflow-x: scroll;
-  scrollbar-width: none;
-  cursor: pointer;
-  border: 1px solid #1a76d1;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.151);
   border-radius: 0px;
   transition: all 0.3s ease;
+  z-index: 0;
+  display: flex;
+  align-items: center;
 }
-.infoBox ol li:hover {
-  color: #1a76d1;
-  background-color: #fff;
-  border: 1px solid #1a76d1;
-} */
+
+.infoBox ol li p{
+	color: #132f57;
+  min-width: 55px;
+  text-align: center;
+	padding: 8px;
+	font-size: 16px;
+  font-weight: 500;
+	border: 1px solid #e98400;
+	margin-right: 15px;
+	z-index: 1;
+}
 .infoBox .headingBar {
   /* position: absolute; */
   width: 100%;
-  background: #1a76d1;
-
+  background: #e98400;
   padding: 8px 5px;
   color: #fff;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   /* left: 30%; */
 }
 /*=============================
