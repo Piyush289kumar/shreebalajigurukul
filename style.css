@@ -4266,10 +4266,11 @@ body{
 
 
 /* Custom CSS */
+/* admissionSection Css Start */
 .admissionSection{
 	background: #eeeeee;
 	padding: 35px 8px;
-	margin: 35px 0;
+	margin: 35px 0 10px 0;
 	text-align: center;
 }
 
@@ -4285,5 +4286,15 @@ body{
 	color: #132f57;
 	padding: 2px 0;
 	margin-bottom: 10px;
+}
+/* admissionSection Css End */
+
+
+.brochuresSection{
+		background: #fff;
+		padding: 35px 8px;
+		margin: 35px 0 10px 0;
+		text-align: center;
+	
 }
 /* Custom CSS */
