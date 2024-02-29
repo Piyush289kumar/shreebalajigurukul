@@ -502,16 +502,16 @@ Preloader Area CSS
 	height:100%;
 	width:100%;
 	background:#1a76d1;
-	opacity:0.8;
+	opacity:0.7;
 }
 /* Bread Crumbs */
 .breadcrumbs {
-	background-image: url('../img/bread-bg.jpg');
+	background-image: url('../img/school_Images/bg1.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
-	padding: 120px 0px;
+	padding: 80px 0px;
 }
 .breadcrumbs .bread-inner{
 	z-index:22;

@@ -4312,9 +4312,16 @@ body {
   .get-pro {
     top: 15px !important;
   }
-  .infoBox{
+  .infoBox {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .managementHeading{
+    font-size: 14px;
+  }
+  .managementParagraph{
+    font-size: 12px;
   }
 }
 /*=========================
@@ -4395,4 +4402,22 @@ hr {
 }
 
 /* hr css end */
+
+/* about management css star */
+.managementBox {
+  border: 1px solid rgba(128, 128, 128, 0.164);
+  padding: 25px 0;
+}
+.managementBoxImg{
+  border: 1px solid rgba(128, 128, 128, 0.164);
+  padding: 8px;
+}
+.managementHeading{
+  font-weight: 600;
+}
+
+.managementParagraph{
+  color: #000;
+}
+/* about management css end */
 /* Custom CSS */
