@@ -4323,6 +4323,12 @@ body {
   .managementParagraph{
     font-size: 12px;
   }
+  .teacherDetailsImg{
+    width: 150px;
+  }
+  .TeachertdParagraph{
+    font-size: 10px !important; 
+  }
 }
 /*=========================
 	End Footer CSS
@@ -4420,4 +4426,15 @@ hr {
   color: #000;
 }
 /* about management css end */
+
+
+/* Teacher Details Start */
+.teacherDetailsImg{
+  width: 250px;
+}
+.TeachertdParagraph{
+  font-size: 12px;
+  color: #000;
+}
+/* Teacher Details End */
 /* Custom CSS */
