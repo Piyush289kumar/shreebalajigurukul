@@ -48,6 +48,10 @@ Version:	1.1
 /*=============================
 	Global CSS 
 ===============================*/
+::selection {
+  color: red;
+  background: yellow;
+}
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
