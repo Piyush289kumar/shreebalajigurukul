@@ -103,6 +103,9 @@ switch ($current_page) {
                             <a href="notification-read.php">Notification</a>
                         </li>
                         <li>
+                            <a href="management-read.php">Management</a>
+                        </li>
+                        <li>
                             <a href="achievement-read.php">Gallery</a>
                         </li>
 
