@@ -130,7 +130,7 @@
                                                 <li><a href="teacher-details.php">Teacher Details</a></li>
                                                 <li><a href="#">Fees</a></li>
                                                 <li><a href="rules-and-guidelines.php">Rules and Guidelines</a></li>
-                                                <li><a href="#">Transfer Certificates</a></li>
+                                                <!-- <li><a href="#">Transfer Certificates</a></li> -->
                                             </ul>
                                         </li>
                                         <li>
