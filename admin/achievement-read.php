@@ -8,11 +8,11 @@ if ($_SESSION['user_role'] == 0) {
     <div class="container">
         <div class="row">
             <div class="col-md-10 mb-2">
-                <h5 class="admin-heading">All Achievement</h5>
+                <h5 class="admin-heading">All Gallery Picture</h5>
             </div>
             <div class="col-md-2">
                 <a class="add-new" href="achievement-insert.php" style="border-radius:16px; margin-bottom:25px">Add
-                    Achievement</a>
+                    Picture</a>
             </div>
             <div class="col-md-12" style="overflow:scroll">
                 <table class="content-table">

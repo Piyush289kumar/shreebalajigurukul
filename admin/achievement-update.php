@@ -61,10 +61,10 @@ if (isset($_POST['submit'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="admin-heading">Modify Achievement Details</h1>
+                <h1 class="admin-heading">Modify Gallery Details</h1>
             </div>
             <div class="col-md-2">
-                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="notification-read.php"><i class="fa-solid fa-arrow-left"></i>
+                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="achievement-read.php"><i class="fa-solid fa-arrow-left"></i>
                     Back</a>
             </div>
             <div class="col-md-offset-4 col-md-4">
@@ -93,23 +93,85 @@ if (isset($_POST['submit'])) {
                                 <label>Achievement Type</label>
                                 <select class="form-control" name="atype" value="<?php echo $row['atype'] ?>">
                                     <?php
-                                    if ($row['atype'] == 'Latest_News') {
-                                        echo ("<option value='Latest_News'selected>Latest News</option>
-                                        <option value='Upcoming_News'>Upcoming News</option>
-                                        <option value='Achievements'>Achievements</option>");
-                                    } elseif ($row['atype'] == 'Upcoming_News') {
-                                        echo ("<option value='Latest_News'>Latest News</option>
-                                        <option value='Upcoming_News' selected>Upcoming News</option>
-                                        <option value='Achievements'>Achievements</option>");
+                                    if ($row['atype'] == 'gallery') {
+
+                                        echo ('<option value="none" disabled><- Select Type -></option>
+                                        <option value="gallery" selected>Gallery</option>
+                                        <option value="Achievements">Achievements</option>
+                                        <option value="co-curricular-activity">Co-Curricular Activity</option>
+                                        <option value="sport">Sport</option>
+                                        <option value="social-service">Social Service</option>
+                                        <option value="trips-and-excursions">Trips and Excursions</option>
+                                        <option value="special-days">Special Days</option>');
                                     } elseif ($row['atype'] == 'Achievements') {
-                                        echo ("<option value='Latest_News'>Latest News</option>
-                                        <option value='Upcoming_News' >Upcoming News</option>
-                                        <option value='Achievements' selected>Achievements</option>");
+
+                                        echo ('<option value="none" disabled><- Select Type -></option>
+                                        <option value="gallery">Gallery</option>
+                                        <option value="Achievements" selected>Achievements</option>
+                                        <option value="co-curricular-activity">Co-Curricular Activity</option>
+                                        <option value="sport">Sport</option>
+                                        <option value="social-service">Social Service</option>
+                                        <option value="trips-and-excursions">Trips and Excursions</option>
+                                        <option value="special-days">Special Days</option>');
+                                    } elseif ($row['atype'] == 'co-curricular-activity') {
+
+                                        echo ('<option value="none" disabled><- Select Type -></option>
+                                        <option value="gallery">Gallery</option>
+                                        <option value="Achievements">Achievements</option>
+                                        <option value="co-curricular-activity" selected>Co-Curricular Activity</option>
+                                        <option value="sport">Sport</option>
+                                        <option value="social-service">Social Service</option>
+                                        <option value="trips-and-excursions">Trips and Excursions</option>
+                                        <option value="special-days">Special Days</option>');
+                                    } elseif ($row['atype'] == 'sport') {
+
+                                        echo ('<option value="none" disabled><- Select Type -></option>
+                                        <option value="gallery">Gallery</option>
+                                        <option value="Achievements">Achievements</option>
+                                        <option value="co-curricular-activity" >Co-Curricular Activity</option>
+                                        <option value="sport" selected>Sport</option>
+                                        <option value="social-service">Social Service</option>
+                                        <option value="trips-and-excursions">Trips and Excursions</option>
+                                        <option value="special-days">Special Days</option>');
+                                    } elseif ($row['atype'] == 'social-service') {
+
+                                        echo ('<option value="none" disabled><- Select Type -></option>
+                                        <option value="gallery">Gallery</option>
+                                        <option value="Achievements">Achievements</option>
+                                        <option value="co-curricular-activity" >Co-Curricular Activity</option>
+                                        <option value="sport" >Sport</option>
+                                        <option value="social-service" selected>Social Service</option>
+                                        <option value="trips-and-excursions">Trips and Excursions</option>
+                                        <option value="special-days">Special Days</option>');
+                                    } elseif ($row['atype'] == 'trips-and-excursions') {
+
+                                        echo ('<option value="none" disabled><- Select Type -></option>
+                                        <option value="gallery">Gallery</option>
+                                        <option value="Achievements">Achievements</option>
+                                        <option value="co-curricular-activity" >Co-Curricular Activity</option>
+                                        <option value="sport" >Sport</option>
+                                        <option value="social-service" >Social Service</option>
+                                        <option value="trips-and-excursions" selected>Trips and Excursions</option>
+                                        <option value="special-days">Special Days</option>');
+                                    } elseif ($row['atype'] == 'special-days') {
+
+                                        echo ('<option value="none" disabled><- Select Type -></option>
+                                        <option value="gallery">Gallery</option>
+                                        <option value="Achievements">Achievements</option>
+                                        <option value="co-curricular-activity" >Co-Curricular Activity</option>
+                                        <option value="sport" >Sport</option>
+                                        <option value="social-service" >Social Service</option>
+                                        <option value="trips-and-excursions" >Trips and Excursions</option>
+                                        <option value="special-days" selected>Special Days</option>');
                                     } else {
-                                        echo ("<option value='none' selected disabled><- Select Type -></option>
-                                        <option value='Latest_News'>Latest News</option>
-                                        <option value='Upcoming_News'>Upcoming News</option>
-                                        <option value='Achievements'>Achievements</option>");
+                                        echo ('<option value="none" selected disabled><- Select Type -></option>
+                                        <option value="gallery">Gallery</option>
+                                        <option value="Achievements">Achievements</option>
+                                        <option value="co-curricular-activity">Co-Curricular Activity</option>
+                                        <option value="sport">Sport</option>
+                                        <option value="social-service">Social Service</option>
+                                        <option value="trips-and-excursions">Trips and Excursions</option>
+                                        <option value="special-days">Special Days</option>');
                                     }
                                     ?>
                                 </select>

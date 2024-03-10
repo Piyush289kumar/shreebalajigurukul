@@ -7,7 +7,7 @@ if ($_SESSION['user_role'] == 0) {
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <h1 class="admin-heading">Add Achievement</h1>
+                <h1 class="admin-heading">Add Gallery Picture</h1>
             </div>
             <div class="col-md-2">
                 <a class="add-new" style="background:#E1412E; border-radius:16px; margin-bottom:25px;"
@@ -77,12 +77,16 @@ if ($_SESSION['user_role'] == 0) {
                         <input type="text" name="atitle" class="form-control" placeholder="Title" required>
                     </div>
                     <div class="form-group">
-                        <label>Notification Type</label>
+                        <label>Gallery Picture Type</label>
                         <select class="form-control" name="atype">
                             <option value="none" selected disabled><- Select Type -></option>
-                            <option value="Latest_News">Latest News</option>
-                            <option value="Upcoming_News">Upcoming News</option>
+                            <option value="gallery">Gallery</option>
                             <option value="Achievements">Achievements</option>
+                            <option value="co-curricular-activity">Co-Curricular Activity</option>
+                            <option value="sport">Sport</option>
+                            <option value="social-service">Social Service</option>
+                            <option value="trips-and-excursions">Trips and Excursions</option>
+                            <option value="special-days">Special Days</option>
                         </select>
                     </div>
                     <div class="form-group">

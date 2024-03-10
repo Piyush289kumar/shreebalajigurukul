@@ -17,7 +17,7 @@ if (isset($_SESSION['username'])) {
     <title>ADMIN | Login</title>
     <link rel="stylesheet" href="../css/bootstrap.min_.css" />
     <link rel="stylesheet" href="../css/font-awesome.css">
-    <link rel="stylesheet" href="../css/adminstyle_center.css">
+    <link rel="stylesheet" href="../css/adminstyle_centerI.css">
 </head>
 
 <body>
