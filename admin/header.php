@@ -66,7 +66,7 @@ switch ($current_page) {
     <!-- Font Awesome Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom stlylesheet -->
-    <link rel="stylesheet" href="../css/adminstyle_center.css">
+    <link rel="stylesheet" href="../css/adminstyle_centerI.css">
     <link rel="shortcut icon" type="x-con" href="../images/VSlogo.png">
 </head>
 
@@ -102,13 +102,14 @@ switch ($current_page) {
                         <li>
                             <a href="notification-read.php">Notification</a>
                         </li>
+                        <li>
+                            <a href="achievement-read.php">Achievement</a>
+                        </li>
 
                         <?php
                         if ($_SESSION['user_role'] == 1 || $_SESSION['user_role'] == 0) {
                         ?>
-                            <li>
-                                <a href="member.php">Member</a>
-                            </li>
+                            
                             <li>
                                 <a href="post.php">post</a>
                             </li>

@@ -220,7 +220,8 @@ form{
 #menu-bar .menu > li > a:hover,
 #menu-bar .menu > li > a.active{
     color:#fff;
-    background:#1A76D1;
+    background:#024f9c;
+    cursor: pointer;
 }
 
 /* Main Content Styling */
@@ -363,9 +364,11 @@ form{
 }
 
 .pagination li a:hover,
+.pagination li.active a,
 .pagination > li > a:focus{
     color:#fff;
-    background:#333;
+    background:#024384;
+    cursor: pointer;
 }
 
 .page_links {

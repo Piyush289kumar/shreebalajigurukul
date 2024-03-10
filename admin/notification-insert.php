@@ -29,7 +29,7 @@ if ($_SESSION['user_role'] == 0) {
                             alert('Record is added successfully !!')
                         </script>
                     <?php
-                        // echo "<script>window.location.href='$hostname/admin/notification-read.php'</script>";
+                        echo "<script>window.location.href='$hostname/admin/notification-read.php'</script>";
                     } else {
                     ?>
                         <script>
