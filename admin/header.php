@@ -7,30 +7,30 @@ if (!isset($_SESSION['username'])) {
 $current_page = basename($_SERVER['PHP_SELF']);
 $prefix_word = "ADMIN Panel";
 switch ($current_page) {
-    // case 'add-category.php':
-    //     $page_title = "{$prefix_word} - Category Add";
-    //     break;
-    // case 'add-post.php':
-    //     $page_title = "{$prefix_word} - Post Add";
-    //     break;
+        // case 'add-category.php':
+        //     $page_title = "{$prefix_word} - Category Add";
+        //     break;
+        // case 'add-post.php':
+        //     $page_title = "{$prefix_word} - Post Add";
+        //     break;
     case 'add-user.php':
         $page_title = "{$prefix_word} - User Add";
         break;
-    // case 'category.php':
-    //     $page_title = "{$prefix_word} - Category";
-    //     break;
-    // case 'post.php':
-    //     $page_title = "{$prefix_word} - Post";
-    //     break;
-    // case 'settings.php':
-    //     $page_title = "{$prefix_word} - Settings";
-    //     break;
-    // case 'update-category.php':
-    //     $page_title = "{$prefix_word} - Category Update";
-    //     break;
-    // case 'update-post.php':
-    //     $page_title = "{$prefix_word} - Post Update";
-    //     break;
+        // case 'category.php':
+        //     $page_title = "{$prefix_word} - Category";
+        //     break;
+        // case 'post.php':
+        //     $page_title = "{$prefix_word} - Post";
+        //     break;
+        // case 'settings.php':
+        //     $page_title = "{$prefix_word} - Settings";
+        //     break;
+        // case 'update-category.php':
+        //     $page_title = "{$prefix_word} - Category Update";
+        //     break;
+        // case 'update-post.php':
+        //     $page_title = "{$prefix_word} - Post Update";
+        //     break;
     case 'update-user.php':
         $page_title = "{$prefix_word} - User Update";
         break;
@@ -98,9 +98,14 @@ switch ($current_page) {
             <div class="row">
                 <div class="col-md-12">
                     <ul class="admin-menu">
+
+                        <li>
+                            <a href="notification-read.php">Notification</a>
+                        </li>
+
                         <?php
                         if ($_SESSION['user_role'] == 1 || $_SESSION['user_role'] == 0) {
-                            ?>
+                        ?>
                             <li>
                                 <a href="member.php">Member</a>
                             </li>
@@ -111,28 +116,28 @@ switch ($current_page) {
 
                         <?php
                         if ($_SESSION['user_role'] == 1) {
-                            ?>
+                        ?>
                             <li>
                                 <a href="want_to_talk.php">Response</a>
                             </li>
                         <?php } ?>
                         <?php
                         if ($_SESSION['user_role'] == 1 || $_SESSION['user_role'] == 5) {
-                            ?>
+                        ?>
 
                             <li>
                                 <a href="astro_admin.php">Astro</a>
                             </li>
-                            <?php
+                        <?php
                         } ?>
                         <?php
                         if ($_SESSION['user_role'] == 1) {
-                            ?>
+                        ?>
 
                             <li>
                                 <a href="users.php">Users</a>
                             </li>
-                            <?php
+                        <?php
                         }
                         ?>
 
