@@ -9,9 +9,9 @@ $user_id_getaddbar = $_GET['id'];
     alert('Deleted successfully !!')
 </script>
 <?php
-$sql_delete_user = "DELETE FROM school_management WHERE smid = '{$user_id_getaddbar}'";
+$sql_delete_user = "DELETE FROM pdf WHERE pid = '{$user_id_getaddbar}'";
 if (mysqli_query($conn, $sql_delete_user)) {
-    echo "<script>window.location.href='$hostname/admin/management-read.php'</script>";
+    echo "<script>window.location.href='$hostname/admin/pdf-read.php'</script>";
 } else {
     echo ("<p style='color:red; margin:10px 0;'>Can't Delete the Record.");
 }

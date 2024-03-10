@@ -98,7 +98,6 @@ switch ($current_page) {
             <div class="row">
                 <div class="col-md-12">
                     <ul class="admin-menu">
-
                         <li>
                             <a href="notification-read.php">Notification</a>
                         </li>
@@ -111,43 +110,25 @@ switch ($current_page) {
                         <li>
                             <a href="achievement-read.php">Gallery</a>
                         </li>
-
-                        <?php
+                        <li>
+                            <a href="pdf-read.php">PDF</a>
+                        </li>
+                        <!-- <php
                         if ($_SESSION['user_role'] == 1 || $_SESSION['user_role'] == 0) {
                         ?>
-                            
                             <li>
                                 <a href="post.php">post</a>
                             </li>
-                        <?php } ?>
-
+                        <php } ?> -->
                         <?php
                         if ($_SESSION['user_role'] == 1) {
                         ?>
-                            <li>
-                                <a href="want_to_talk.php">Response</a>
-                            </li>
-                        <?php } ?>
-                        <?php
-                        if ($_SESSION['user_role'] == 1 || $_SESSION['user_role'] == 5) {
-                        ?>
-
-                            <li>
-                                <a href="astro_admin.php">Astro</a>
-                            </li>
-                        <?php
-                        } ?>
-                        <?php
-                        if ($_SESSION['user_role'] == 1) {
-                        ?>
-
                             <li>
                                 <a href="users.php">Users</a>
                             </li>
                         <?php
                         }
                         ?>
-
                         <li>
                             <a href="logout.php">Logout</a>
                         </li>

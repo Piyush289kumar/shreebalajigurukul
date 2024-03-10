@@ -6,7 +6,6 @@ include("config.php");
 $user_id_getaddbar = $_GET['id'];
 $file_name = '';
 if (isset($_POST['submit'])) {
-
     if (empty($_FILES['new-image']['name'])) {
         $save_img_name = $_POST['old-image'];
     } else {
@@ -17,16 +16,16 @@ if (isset($_POST['submit'])) {
             $file_size = $_FILES['new-image']["size"];
             $tempFileExt = explode('.', $file_name);
             $file_ext = strtolower(end($tempFileExt));
-            $allow_extension = array("jpg", "jpeg", "png", "webp");
+            $allow_extension = array("pdf");
             $file_error = array();
             if (in_array($file_ext, $allow_extension) === false) {
-                $file_error[] = "This extension file not allowed, Please choose a JPG or PNG file.";
+                $file_error[] = "This extension file not allowed, Please choose a PDF file.";
             }
             if ($file_size > 2097152) {
                 $file_error[] = "Image must be 2mb or lower.";
             }
             $save_img_name = date("d_M_Y_h_i_sa") . "_" . basename($file_name);
-            $img_save_target = "upload/school-management-member/";
+            $img_save_target = "upload/pdf/";
             if (empty($file_error) == true) {
                 move_uploaded_file($file_tmp, $img_save_target . $save_img_name);
             } else {
@@ -35,18 +34,16 @@ if (isset($_POST['submit'])) {
             }
         }
     }
-
     $ntitle = mysqli_real_escape_string($conn, $_POST['atitle']);
-    $ndes = mysqli_real_escape_string($conn, $_POST['smdes']);
-
-    $sql_update_user = "UPDATE school_management SET smname = '{$ntitle}', smdes = '{$ndes}', smimg = '{$save_img_name}' WHERE smid ='{$user_id_getaddbar}'";
+    $ptype = mysqli_real_escape_string($conn, $_POST['ptype']);
+    $sql_update_user = "UPDATE pdf SET pname = '{$ntitle}', ptype = '{$ptype}', pdf = '{$save_img_name}' WHERE pid ='{$user_id_getaddbar}'";
     if (mysqli_query($conn, $sql_update_user)) {
 ?>
         <script>
             alert('Record is Update successfully !!')
         </script>
     <?php
-        echo "<script>window.location.href='$hostname/admin/management-read.php'</script>";
+        echo "<script>window.location.href='$hostname/admin/pdf-read.php'</script>";
     } else {
     ?>
         <script>
@@ -60,42 +57,74 @@ if (isset($_POST['submit'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="admin-heading" style='font-size:25px; margin-bottom:25px;'>Modify Management Member Details</h1>
+                <h1 class="admin-heading" style='font-size:25px; margin-bottom:25px;'>Modify PDF Details</h1>
             </div>
             <div class="col-md-2">
-                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="management-read.php"><i class="fa-solid fa-arrow-left"></i>
+                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="pdf-read.php"><i class="fa-solid fa-arrow-left"></i>
                     Back</a>
             </div>
-            <div class="col-md-offset-4 col-md-4">
+            <div class="col-md-offset-1 col-md-10">
                 <!-- Form Start -->
                 <!-- PHP CODE -->
                 <?php include("config.php");
-                $sql_userdata_show_by_id = "SELECT * FROM school_management WHERE smid = '{$user_id_getaddbar}'";
+                $sql_userdata_show_by_id = "SELECT * FROM pdf WHERE pid = '{$user_id_getaddbar}'";
                 $result_sql_userdata_show_by_id = mysqli_query($conn, $sql_userdata_show_by_id) or die("Query Die!!");
                 if (mysqli_num_rows($result_sql_userdata_show_by_id) > 0) {
                     while ($row = mysqli_fetch_assoc($result_sql_userdata_show_by_id)) {
                 ?>
                         <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
                             <div class="form-group">
-                                <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['smid'] ?>" placeholder="">
+                                <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['pid'] ?>" placeholder="">
                             </div>
                             <div class="form-group">
-                                <label>Member Name</label>
-                                <input type="text" name="atitle" class="form-control" value="<?php echo $row['smname'] ?>" placeholder="Member Name" required>
+                                <label>PDF Title</label>
+                                <input type="text" name="atitle" class="form-control" value="<?php echo $row['pname'] ?>" placeholder="PDF Title" required>
                             </div>
-
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Description</label>
-                                <textarea name="smdes" class="form-control"
-                                    rows="5"><?php echo ($row['smdes']) ?></textarea>
+                                <label>PDF Type</label>
+                                <select class="form-control" name="ptype" value="<?php echo $row['ptype'] ?>">
+                                    <?php
+                                    if ($row['ptype'] == 'Mandatory_Information') {
+                                        echo ('<option value="none" disabled><- Select PDF Type -></option>
+                                        <option value="Mandatory_Information" selected>Mandatory Information</option>
+                                        <option value="Fees">Fees</option>
+                                        <option value="Rules_and_Guidelines">Rules and Guidelines</option>
+                                        <option value="Result">Result</option>');
+                                    } elseif ($row['ptype'] == 'Fees') {
+                                        echo ('<option value="none" disabled><- Select PDF Type -></option>
+                                        <option value="Mandatory_Information">Mandatory Information</option>
+                                        <option value="Fees" selected>Fees</option>
+                                        <option value="Rules_and_Guidelines">Rules and Guidelines</option>
+                                        <option value="Result">Result</option>');
+                                    } elseif ($row['ptype'] == 'Rules_and_Guidelines') {
+                                        echo ('<option value="none" disabled><- Select PDF Type -></option>
+                                        <option value="Mandatory_Information">Mandatory Information</option>
+                                        <option value="Fees" >Fees</option>
+                                        <option value="Rules_and_Guidelines" selected>Rules and Guidelines</option>
+                                        <option value="Result">Result</option>');
+                                    } elseif ($row['ptype'] == 'Result') {
+                                        echo ('<option value="none" disabled><- Select PDF Type -></option>
+                                        <option value="Mandatory_Information">Mandatory Information</option>
+                                        <option value="Fees" >Fees</option>
+                                        <option value="Rules_and_Guidelines">Rules and Guidelines</option>
+                                        <option value="Result" selected>Result</option>');
+                                    } else {
+                                        echo ('<option value="none" selected disabled><- Select PDF Type -></option>
+                                        <option value="Mandatory_Information">Mandatory Information</option>
+                                        <option value="Fees" >Fees</option>
+                                        <option value="Rules_and_Guidelines">Rules and Guidelines</option>
+                                        <option value="Result">Result</option>');
+                                    }
+                                    ?>
+                                </select>
                             </div>
-
-
                             <div class="form-group">
-                                <label for="">Member Picture</label>
+                                <label for="">PDF</label>
                                 <input type="file" name="new-image">
-                                <img src="upload/school-management-member/<?php echo $row['smimg']; ?>" height="150px" style="border-radius: 4px; margin-top:12px;">
-                                <input type="hidden" name="old-image" value="<?php echo $row['smimg']; ?>">
+                                <!-- 
+                                <img src="upload/pdf/<php echo $row['pdf']; ?>" height="150px" style="border-radius: 4px; margin-top:12px;"> -->
+                                <iframe src="upload/pdf/<?php echo $row['pdf']; ?>" frameBorder="0" scrolling="auto" height="500px" width="100%" style="border-radius: 4px; margin-top:12px;"></iframe>
+                                <input type="hidden" name="old-image" value="<?php echo $row['pdf']; ?>">
                             </div>
                             <input type="submit" name="submit" class="btn btn-primary" style="border-radius:16px;" value="Update" required />
                         </form>
