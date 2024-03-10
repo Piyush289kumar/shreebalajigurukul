@@ -95,7 +95,7 @@ if ($_SESSION['user_role'] == 0) {
                         <input type="email" name="stemail" class="form-control" placeholder="Staff Member Email" required>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Picture</label>
+                        <label for="exampleInputPassword1">Staff Member Picture</label>
                         <input type="file" name="fileToUpload" required>
                     </div>
                     <input type="submit" name="save" class="btn btn-primary" style="border-radius:16px;" value="Save" required />

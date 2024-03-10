@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
                 $file_error[] = "Image must be 2mb or lower.";
             }
             $save_img_name = date("d_M_Y_h_i_sa") . "_" . basename($file_name);
-            $img_save_target = "upload/school-management-member/";
+            $img_save_target = "upload/staff_member/";
             if (empty($file_error) == true) {
                 move_uploaded_file($file_tmp, $img_save_target . $save_img_name);
             } else {
@@ -37,16 +37,20 @@ if (isset($_POST['submit'])) {
     }
 
     $ntitle = mysqli_real_escape_string($conn, $_POST['atitle']);
-    $ndes = mysqli_real_escape_string($conn, $_POST['smdes']);
-
-    $sql_update_user = "UPDATE school_management SET smname = '{$ntitle}', smdes = '{$ndes}', smimg = '{$save_img_name}' WHERE smid ='{$user_id_getaddbar}'";
+    $stpost = mysqli_real_escape_string($conn, $_POST['stpost']);
+    $stq = mysqli_real_escape_string($conn, $_POST['stq']);
+    $stex = mysqli_real_escape_string($conn, $_POST['stex']);
+    $stphone = mysqli_real_escape_string($conn, $_POST['stphone']);
+    $stemail = mysqli_real_escape_string($conn, $_POST['stemail']);
+    
+    $sql_update_user = "UPDATE staff_info SET stname = '{$ntitle}', stpost = '{$stpost}',  stq = '{$stq}',  stex = '{$stex}',  stphone = '{$stphone}',  stemail = '{$stemail}', stimg = '{$save_img_name}' WHERE stid ='{$user_id_getaddbar}'";
     if (mysqli_query($conn, $sql_update_user)) {
 ?>
         <script>
             alert('Record is Update successfully !!')
         </script>
     <?php
-        echo "<script>window.location.href='$hostname/admin/management-read.php'</script>";
+        echo "<script>window.location.href='$hostname/admin/staff_info-read.php'</script>";
     } else {
     ?>
         <script>
@@ -60,42 +64,59 @@ if (isset($_POST['submit'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="admin-heading" style='font-size:25px; margin-bottom:25px;'>Modify Management Member Details</h1>
+                <h1 class="admin-heading" style='font-size:25px; margin-bottom:25px;'>Modify Staff Member Details</h1>
             </div>
             <div class="col-md-2">
-                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="management-read.php"><i class="fa-solid fa-arrow-left"></i>
+                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="staff_info-read.php"><i class="fa-solid fa-arrow-left"></i>
                     Back</a>
             </div>
             <div class="col-md-offset-4 col-md-4">
                 <!-- Form Start -->
                 <!-- PHP CODE -->
                 <?php include("config.php");
-                $sql_userdata_show_by_id = "SELECT * FROM school_management WHERE smid = '{$user_id_getaddbar}'";
+                $sql_userdata_show_by_id = "SELECT * FROM staff_info WHERE stid = '{$user_id_getaddbar}'";
                 $result_sql_userdata_show_by_id = mysqli_query($conn, $sql_userdata_show_by_id) or die("Query Die!!");
                 if (mysqli_num_rows($result_sql_userdata_show_by_id) > 0) {
                     while ($row = mysqli_fetch_assoc($result_sql_userdata_show_by_id)) {
                 ?>
                         <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
                             <div class="form-group">
-                                <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['smid'] ?>" placeholder="">
+                                <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['stid'] ?>" placeholder="">
                             </div>
                             <div class="form-group">
                                 <label>Member Name</label>
-                                <input type="text" name="atitle" class="form-control" value="<?php echo $row['smname'] ?>" placeholder="Member Name" required>
+                                <input type="text" name="atitle" class="form-control" value="<?php echo $row['stname'] ?>" placeholder="Member Name" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Description</label>
-                                <textarea name="smdes" class="form-control"
-                                    rows="5"><?php echo ($row['smdes']) ?></textarea>
+                                <label>Member Designation</label>
+                                <input type="text" name="stpost" class="form-control" value="<?php echo $row['stpost'] ?>" placeholder="Member Designation" required>
                             </div>
+
+                            <div class="form-group">
+                                <label>Member Qualification</label>
+                                <input type="text" name="stq" class="form-control" value="<?php echo $row['stq'] ?>" placeholder="Member Qualification" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Member Experience</label>
+                                <input type="text" name="stex" class="form-control" value="<?php echo $row['stex'] ?>" placeholder="Member Experience" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Staff Member Phone</label>
+                                <input type="text" name="stphone" class="form-control" value="<?php echo $row['stphone'] ?>" placeholder="Staff Member Phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Staff Member Email</label>
+                                <input type="email" name="stemail" class="form-control" value="<?php echo $row['stemail'] ?>" placeholder="Staff Member Email" required>
+                            </div>
+                           
 
 
                             <div class="form-group">
-                                <label for="">Member Picture</label>
+                                <label for="">Staff Member Picture</label>
                                 <input type="file" name="new-image">
-                                <img src="upload/school-management-member/<?php echo $row['smimg']; ?>" height="150px" style="border-radius: 4px; margin-top:12px;">
-                                <input type="hidden" name="old-image" value="<?php echo $row['smimg']; ?>">
+                                <img src="upload/staff_member/<?php echo $row['stimg']; ?>" height="150px" style="border-radius: 4px; margin-top:12px;">
+                                <input type="hidden" name="old-image" value="<?php echo $row['stimg']; ?>">
                             </div>
                             <input type="submit" name="submit" class="btn btn-primary" style="border-radius:16px;" value="Update" required />
                         </form>
