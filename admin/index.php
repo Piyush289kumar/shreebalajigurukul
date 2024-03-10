@@ -8,6 +8,7 @@ if (isset($_SESSION['username'])) {
 ?>
 <!doctype html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,8 +17,9 @@ if (isset($_SESSION['username'])) {
     <title>ADMIN | Login</title>
     <link rel="stylesheet" href="../css/bootstrap.min_.css" />
     <link rel="stylesheet" href="../css/font-awesome.css">
-    <link rel="stylesheet" href="../css/adminstyle_.css">
+    <link rel="stylesheet" href="../css/adminstyle_center.css">
 </head>
+
 <body>
     <div id="wrapper-admin" class="body-content">
         <div class="container">
@@ -48,12 +50,8 @@ if (isset($_SESSION['username'])) {
                                 $userRole;
                                 if ($_SESSION['user_role'] == 1) {
                                     $userRole = "Admin";
-                                } elseif ($_SESSION['user_role'] == 0) {
+                                } else {
                                     $userRole = "Local";
-                                } elseif ($_SESSION['user_role'] == 5){
-                                    $userRole = "Astrologiest";
-                                }else {
-                                    $userRole = "EndUser";
                                 }
                                 $log_time = date("h:i:s A");
                                 $log_date = date("d-m-Y");
@@ -61,8 +59,9 @@ if (isset($_SESSION['username'])) {
                                 $sql_log = "INSERT INTO user_log (user_id, username, user_role, log_date, log_time)
                                 VALUES ('{$user_id}','{$username}','{$userRole}','{$log_date}','{$log_time}')";
                                 if (mysqli_query($conn, $sql_log)) {
-                                echo "<script>window.location.href='$hostname/admin/login_mailsender.php'</script>";
-                                } 
+                                    // echo "<script>window.location.href='$hostname/admin/login_mailsender.php'</script>";
+                                    echo "<script>window.location.href='$hostname/admin/post.php'</script>";
+                                }
                             }
                         } else {
                             echo "<div class='alert alert-danger'>Invalid username and password!!</div>";
@@ -72,20 +71,17 @@ if (isset($_SESSION['username'])) {
                     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                         <div class="form-group">
                             <label>Username</label>
-                            <input type="text" name="username" class="form-control" placeholder="" autocomplete="off"
-                                required>
+                            <input type="text" name="username" class="form-control" placeholder="" autocomplete="off" required>
                         </div>
                         <div class="form-group">
                             <label>Password</label>
                             <input type="password" name="password" class="form-control" placeholder="" required>
                         </div>
                         <div class="form-group">
-                        <a href="forgot_password.php">Forgot password?</a>
+                            <a href="forgot_password.php">Forgot password?</a>
                         </div>
-                        <input type="submit" name="login" class="btn btn-primary"
-                            value="&nbsp;&nbsp;login&nbsp;&nbsp;" />
-                        <button class="btn btn-secondary"><a
-                                href="<?php echo $hostname ?>">&nbsp;&nbsp;Back&nbsp;&nbsp;</a></button>
+                        <input type="submit" name="login" class="btn btn-primary" value="&nbsp;&nbsp;login&nbsp;&nbsp;" />
+                        <button class="btn btn-secondary"><a href="<?php echo $hostname ?>">&nbsp;&nbsp;Back&nbsp;&nbsp;</a></button>
                     </form>
                     <!-- /Form  End -->
                 </div>
@@ -93,4 +89,5 @@ if (isset($_SESSION['username'])) {
         </div>
     </div>
 </body>
+
 </html>
