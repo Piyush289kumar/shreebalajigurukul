@@ -106,6 +106,9 @@ switch ($current_page) {
                             <a href="management-read.php">Management</a>
                         </li>
                         <li>
+                            <a href="staff_info-read.php">Staff</a>
+                        </li>
+                        <li>
                             <a href="achievement-read.php">Gallery</a>
                         </li>
 

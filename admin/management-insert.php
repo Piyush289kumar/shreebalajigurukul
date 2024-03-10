@@ -35,9 +35,7 @@ if ($_SESSION['user_role'] == 0) {
                             if (isset($img)) {
                                 $output_img = date("d_M_Y_h_i_sa") . "_" . basename($_FILES['fileToUpload']["name"]) . ".webp";
                                 imagewebp($img, "upload/school-management-member/" . $output_img, 100);
-                                if (isset($img)) {
-                                    $output_img = date("d_M_Y_h_i_sa") . "_" . basename($_FILES['fileToUpload']["name"]) . ".webp";
-                                    imagewebp($img, "upload/" . $output_img, 15);
+                                
                                     include("config.php");
                                     $ndate = date("d M, Y");
                                     $ntitle = mysqli_real_escape_string($conn, $_POST['atitle']);
@@ -64,7 +62,7 @@ if ($_SESSION['user_role'] == 0) {
                             }
                         }
                     }
-                }
+                
                 ?>
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" autocomplete="off"
                     enctype="multipart/form-data">
