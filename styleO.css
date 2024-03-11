@@ -4441,4 +4441,57 @@ hr {
   color: #000;
 }
 /* Teacher Details End */
+
+
+
+/* Pagination  Styling */
+.pagination {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+.pagination li {
+  display:inline-block;
+  margin: 35px 5px 35px 0;
+}
+
+.pagination li a{
+  border: none;
+  background: #1A76D1;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination li a:hover,
+.pagination li.active a,
+.pagination > li > a:focus{
+  color:#fff;
+  background:#024384;
+  cursor: pointer;
+}
+
+.page_links {
+  background-color: #ccc;
+  font-family: arial, verdana;
+  font-size: 12px;
+  text-decoration: none;
+  border:1px solid #000;
+  padding: 6px;
+  margin: 3px;
+}
+
+#page_a_link{
+  font-size: 12px;
+  border:1px #000000 solid;
+  color:#000;
+  background-color: #cccccc;
+  padding: 6px;
+  margin: 3px;
+  text-decoration: none;
+}
+
+/* Pagination  Styling */
 /* Custom CSS */

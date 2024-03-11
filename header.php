@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <!-- Medipro CSS -->
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleO.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
@@ -120,7 +120,7 @@
                                         <li>
                                             <a href="managment.php">About Us <i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
-                                                <li><a href="managment.php">Management </a></li>
+                                                <li><a href="management.php">Management </a></li>
                                                 <li><a href="mandatory-information.php">Mandatory Information</a></li>
                                             </ul>
                                         </li>
