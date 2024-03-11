@@ -57,14 +57,14 @@ if ($_SESSION['user_role'] == 0) {
                             alert('Record is added successfully !!')
                         </script>
                     <?php
-                        // echo "<script>window.location.href='$hostname/admin/management-read.php'</script>";
+                        echo "<script>window.location.href='$hostname/admin/pdf-read.php'</script>";
                     } else {
                     ?>
                         <script>
                             alert('Record is Not added !!')
                         </script>
                 <?php
-                        // echo "<script>window.location.href='$hostname/admin/management-read.php'</script>";
+                        echo "<script>window.location.href='$hostname/admin/pdf-read.php'</script>";
                     }
                 }
 

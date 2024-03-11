@@ -128,7 +128,7 @@
                                             <a href="teacher-details.php">Academics<i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
                                                 <li><a href="teacher-details.php">Teacher Details</a></li>
-                                                <li><a href="#">Fees</a></li>
+                                                <li><a href="fees.php">Fees</a></li>
                                                 <li><a href="rules-and-guidelines.php">Rules and Guidelines</a></li>
                                                 <!-- <li><a href="#">Transfer Certificates</a></li> -->
                                             </ul>
@@ -144,7 +144,7 @@
                                                 <li><a href="#">Special Days</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">Result </a></li>
+                                        <li><a href="result.php">Result </a></li>
                                         <li><a href="#">Gallery </a></li>
                                         <li><a href="campus.php">Campus & Facilities </a></li>
                                         <!-- <li>

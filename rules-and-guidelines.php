@@ -21,171 +21,49 @@
 	</div>
 </div>
 <!-- End Breadcrumbs -->
-<!-- Table -->
+
 <section>
 	<div class="container">
 		<div class="row mt-4">
-			<div class="col-md-12 mt-5">
+			<div class="col-md-12 mt-4">
 				<div class="section-title">
-					<h2>Fees Terms and Conditions</h2>
+					<h2>Rules and Guidelines</h2>
 					<hr class="center-diamond">
 				</div>
-				<div class="col-md-12 mb-5 pb-5" style="border-bottom: 1px solid #0000004e;">
-					<h6 class="mb-3" style="text-decoration: underline; color:#000; font-weight: 700;">NOTE :</h6>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-				</div>
-				<div class="col-md-12 mb-5 pb-5" style="border-bottom: 1px solid #0000004e;">
-					<h6 class="mb-3" style="text-decoration: underline; color:#000; font-weight: 700;">PAYMENT OF
-						FEES :</h6>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-				</div>
-				<div class="col-md-12 mb-5 pb-5" style="border-bottom: 1px solid #0000004e;">
-					<h6 class="mb-3" style="text-decoration: underline; color:#000; font-weight: 700;">DISCOUNTS :
-					</h6>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-				</div>
-				<div class="col-md-12 mb-5 pb-5" style="border-bottom: 1px solid #0000004e;">
-					<h6 class="mb-3" style="text-decoration: underline; color:#000; font-weight: 700;">RIGHT OF
-						ALTERATION I MODIFICATION :</h6>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-				</div>
-				<div class="col-md-12 mb-5 pb-5" style="border-bottom: 1px solid #0000004e;">
-					<h6 class="mb-3" style="text-decoration: underline; color:#000; font-weight: 700;">TRANSPORT :
-					</h6>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-				</div>
-				<div class="col-md-12 mb-5 pb-5" style="border-bottom: 1px solid #0000004e;">
-					<h6 class="mb-3" style="text-decoration: underline; color:#000; font-weight: 700;">
-						REFUND/CANCELLATION OF FEE :</h6>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-				</div>
-				<div class="col-md-12 mb-5 pb-5" style="border-bottom: 1px solid #0000004e;">
-					<h6 class="mb-3" style="text-decoration: underline; color:#000; font-weight: 700;">Privacy
-						Policy :</h6>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-					<p style="color: #000;"><span style="font-size: 20px;">&bull; </span>Lorem ipsum dolor sit amet
-						consectetur adipisicing elit. Atque eius debitis,
-						excepturi pariatur.</p>
-				</div>
+				<!-- Table -->
+				<section class="container">
+					<!-- PHP CODE -->
+					<?php
+					include("config.php");
+					if (isset($_GET['page_num_index'])) {
+						$page_num_index_by_addbar = $_GET['page_num_index'];
+					} else {
+						$page_num_index_by_addbar = 1;
+					}
+					$record_limit = 1;
+					$offset = ($page_num_index_by_addbar - 1) * $record_limit;
+					$sql_show_user = "SELECT * FROM pdf WHERE ptype = 'Rules_and_Guidelines' ORDER BY pid DESC LIMIT {$offset},{$record_limit}";
+					$result_sql_show_user = mysqli_query($conn, $sql_show_user) or die("Query Failed!!");
+					if (mysqli_num_rows($result_sql_show_user) > 0) {
+						$serial_num = $offset + 1;
+						while ($row = mysqli_fetch_assoc($result_sql_show_user)) {
+					?>
+							<iframe src="admin/upload/pdf/<?php echo $row['pdf']; ?>" frameBorder="0" scrolling="auto" height="100%" width="100%" style="min-height:100vh; margin-bottom:35px; border-radius: 8px; margin-top:12px;"></iframe>
+
+					<?php }
+					} ?>
+
+
+
+				</section>
+				<!-- Table -->
 			</div>
 		</div>
+
+
 	</div>
 </section>
-<!-- Table -->
+
+
+
 <?php include 'footer.php' ?>
