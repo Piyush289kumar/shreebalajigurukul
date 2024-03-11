@@ -113,6 +113,9 @@ switch ($current_page) {
                         <li>
                             <a href="pdf-read.php">PDF</a>
                         </li>
+                        <li>
+                            <a href="campus-read.php">Campus & Career</a>
+                        </li>
                         <!-- <php
                         if ($_SESSION['user_role'] == 1 || $_SESSION['user_role'] == 0) {
                         ?>
