@@ -26,10 +26,10 @@ if (isset($_SESSION['username'])) {
             <div class="row">
                 <div class="col-md-offset-4 col-md-4">
                     <!-- logo -->
-                    <img class="logo" src="../images/admin_logo.png" alt="Shree Bala Ji Gurukul"">
+                    <img class="logo" src="../img/logo/logo.png" alt="Shree Bala Ji Gurukul" style="border-radius: 8px;">
                     <!-- logo -->
                     <!-- <img class=" logo" src="images/news.jpg"> -->
-                    <h3 class="heading  text-center" style="font-weight:700">Login</h3>
+                    <h3 class="heading text-center" style="font-weight:700">Login</h3>
                     <!-- Form Start -->
                     <?php
                     if (isset($_POST['login'])) {
@@ -76,9 +76,9 @@ if (isset($_SESSION['username'])) {
                             <label>Password</label>
                             <input type="password" name="password" class="form-control" placeholder="" required>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <a href="forgot_password.php">Forgot password?</a>
-                        </div>
+                        </div> -->
                         <input type="submit" name="login" class="btn btn-primary" value="&nbsp;&nbsp;login&nbsp;&nbsp;" />
                         <button class="btn btn-secondary"><a href="<?php echo $hostname ?>">&nbsp;&nbsp;Back&nbsp;&nbsp;</a></button>
                     </form>
