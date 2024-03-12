@@ -145,7 +145,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="result.php">Result </a></li>
-                                        <li><a href="#">Gallery </a></li>
+                                        <li><a href="gallery.php?tab=gallery">Gallery </a></li>
                                         <li><a href="campus.php">Campus & Facilities </a></li>
                                         <!-- <li>
 											<a href="#">Admission <i class="icofont-rounded-down"></i></a>
