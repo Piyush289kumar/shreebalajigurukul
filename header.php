@@ -136,12 +136,12 @@
                                         <li>
                                             <a href="achievements.php">Beyond Academics<i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
-                                                <li><a href="achievements.php">Achievements</a></li>
-                                                <li><a href="co-curricular-activity.php">Co-Curricular Activity</a></li>
-                                                <li><a href="sport.php">Sport</a></li>
-                                                <li><a href="#">Social Service</a></li>
-                                                <li><a href="#">Trips and Excursions</a></li>
-                                                <li><a href="#">Special Days</a></li>
+                                                <li><a href="gallery.php?tab=Achievements">Achievements</a></li>
+                                                <li><a href="gallery.php?tab=co-curricular-activity">Co-Curricular Activity</a></li>
+                                                <li><a href="gallery.php?tab=sport">Sport</a></li>
+                                                <li><a href="gallery.php?tab=social-service">Social Service</a></li>
+                                                <li><a href="gallery.php?tab=trips-and-excursions">Trips and Excursions</a></li>
+                                                <li><a href="gallery.php?tab=special-days">Special Days</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="result.php">Result </a></li>
