@@ -10,7 +10,8 @@
     <meta name="copyright" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Title -->
-    <title>School Website</title>
+    <?php include 'config.php' ?>
+    <title><?php echo $website_display_default_name ?></title>
     <!-- Favicon -->
     <link rel="icon" href="img/logo.png" />
     <!-- Google Fonts -->
@@ -42,7 +43,7 @@
 
 <body style="overflow-x: hidden;">
     <!-- Preloader -->
-    <!-- <div class="preloader">
+    <div class="preloader">
         <div class="loader">
             <div class="loader-outter"></div>
             <div class="loader-inner"></div>
@@ -53,7 +54,7 @@
                 </svg>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- End Preloader -->
     <!-- Get Pro Button -->
     <!-- <ul class="pro-features">
@@ -118,7 +119,7 @@
                                     <ul class="nav menu">
                                         <li class="active"><a href="index.php">Home </a></li>
                                         <li>
-                                            <a href="managment.php">About Us <i class="icofont-rounded-down"></i></a>
+                                            <a href="management.php">About Us <i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
                                                 <li><a href="management.php">Management </a></li>
                                                 <li><a href="mandatory-information.php">Mandatory Information</a></li>
@@ -134,7 +135,7 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="achievements.php">Beyond Academics<i class="icofont-rounded-down"></i></a>
+                                            <a href="gallery.php?tab=Achievements">Beyond Academics<i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
                                                 <li><a href="gallery.php?tab=Achievements">Achievements</a></li>
                                                 <li><a href="gallery.php?tab=co-curricular-activity">Co-Curricular Activity</a></li>
