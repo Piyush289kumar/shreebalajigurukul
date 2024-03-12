@@ -9,7 +9,9 @@ $user_id_getaddbar = $_GET['id'];
     alert('Deleted successfully !!')
 </script>
 <?php
-$sql_delete_user = "DELETE FROM campus WHERE smid = '{$user_id_getaddbar}'";
+
+$sql_delete_user = "UPDATE campus SET active_record = 'no' WHERE smid = '{$user_id_getaddbar}'";
+
 if (mysqli_query($conn, $sql_delete_user)) {
     echo "<script>window.location.href='$hostname/admin/campus-read.php'</script>";
 } else {

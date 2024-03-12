@@ -9,7 +9,9 @@ $user_id_getaddbar = $_GET['id'];
     alert('Deleted successfully !!')
 </script>
 <?php
-$sql_delete_user = "DELETE FROM achievement WHERE aid = '{$user_id_getaddbar}'";
+
+$sql_delete_user = "UPDATE achievement SET active_record = 'no' WHERE aid = '{$user_id_getaddbar}'";
+
 if (mysqli_query($conn, $sql_delete_user)) {
     echo "<script>window.location.href='$hostname/admin/achievement-read.php'</script>";
 } else {
