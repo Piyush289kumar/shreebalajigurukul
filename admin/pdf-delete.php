@@ -9,7 +9,9 @@ $user_id_getaddbar = $_GET['id'];
     alert('Deleted successfully !!')
 </script>
 <?php
-$sql_delete_user = "DELETE FROM pdf WHERE pid = '{$user_id_getaddbar}'";
+
+$sql_delete_user = "UPDATE pdf SET active_record = 'no' WHERE pid = '{$user_id_getaddbar}'";
+
 if (mysqli_query($conn, $sql_delete_user)) {
     echo "<script>window.location.href='$hostname/admin/pdf-read.php'</script>";
 } else {

@@ -8,26 +8,14 @@ if ($_SESSION['user_role'] == 0 || $_SESSION['user_role'] == 5 || $_SESSION['use
 <div id="admin-content">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
-            <div class="col-md-3">
-                </div>
-                <div class="col-md-2">
-                    <a class="add-new" href="users.php" style="background:#E1412E; border-radius: 16px; color:white; margin-bottom: 5px;">Admin Users</a>
-                </div>
-                <div class="col-md-2">
-                <a class="add-new" href="astro_users.php" style="border-radius: 16px; color:white; margin-bottom: 5px;">Jyotishi</a>
-                </div>
-                <div class="col-md-2">
-                <a class="add-new" href="endusers.php" style="border-radius: 16px; color:white; margin-bottom: 5px;">End Users</a>
-                </div>
-            </div>
+           
             <div class="col-md-10">
                 <h5 class="admin-heading">All Admin Users</h5>
             </div>
             <div class="col-md-2">
-                <a class="add-new" href="add-user.php" style="border-radius:16px;">add user</a>
+                <a class="add-new" href="add-user.php" style="border-radius:16px; margin-bottom:35px;">add user</a>
             </div>
-            <div class="col-md-12"  style="overflow:scroll">
+            <div class="col-md-12" style="overflow:scroll">
                 <table class="content-table">
                     <thead>
                         <th>S.No.</th>
@@ -56,14 +44,13 @@ if ($_SESSION['user_role'] == 0 || $_SESSION['user_role'] == 5 || $_SESSION['use
                             $serial_num = $offset + 1;
                             while ($row = mysqli_fetch_assoc($result_sql_show_user)) {
 
-                                ?>
+                        ?>
                                 <tr>
                                     <td class='id'>
                                         <?php echo ($serial_num); ?>
                                     </td>
                                     <td style="text-align:center;">
-                                        <img src="upload/member/<?php echo ($row['img']) ?>" alt="Error"
-                                            style="height: 65px; border-radius:50%;">
+                                        <img src="upload/member/<?php echo ($row['img']) ?>" alt="Error" style="height: 65px; border-radius:50%;">
 
                                     </td>
                                     <td>
@@ -75,21 +62,15 @@ if ($_SESSION['user_role'] == 0 || $_SESSION['user_role'] == 5 || $_SESSION['use
                                     <td>
                                         <?php if ($row['role'] == 1) {
                                             echo ("Admin");
-                                        } elseif ($row['role'] == 0) {
-                                            echo ("Local");
-                                        } elseif ($row['role'] == 5) {
-                                            echo ("Astrologiest");
                                         } else {
-                                            echo ("End User");
+                                            echo ("Local");
                                         } ?>
                                     </td>
-                                    <td class='edit'><a href='update-user.php?id=<?php echo ($row["username"]) ?>'><i
-                                                class='fa fa-edit'></i></a></td>
-                                    <td class='delete'><a href='delete-user.php?id=<?php echo ($row["username"]) ?>'><i
-                                                class='fa fa-trash'></i></a></td>
+                                    <td class='edit'><a href='update-user.php?id=<?php echo ($row["username"]) ?>'><i class='fa fa-edit'></i></a></td>
+                                    <td class='delete'><a href='delete-user.php?id=<?php echo ($row["username"]) ?>'><i class='fa fa-trash'></i></a></td>
                                 </tr>
 
-                                <?php $serial_num++;
+                        <?php $serial_num++;
                             }
                         } ?>
                         <!-- PHP CODE -->

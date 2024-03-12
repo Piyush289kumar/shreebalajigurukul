@@ -1,8 +1,7 @@
 <?php include "header.php";
 if ($_SESSION['user_role'] == 0) {
     header("Location:{$hostname}/admin/");
-}
-;
+};
 include("config.php");
 $user_id_getaddbar = $_GET['id'];
 if (isset($_POST['submit'])) {
@@ -52,8 +51,7 @@ if (isset($_POST['submit'])) {
                 <h1 class="admin-heading">Modify User Details</h1>
             </div>
             <div class="col-md-2">
-                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="users.php"><i
-                        class="fa-solid fa-arrow-left"></i>
+                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="users.php"><i class="fa-solid fa-arrow-left"></i>
                     Back</a>
             </div>
             <div class="col-md-offset-4 col-md-4">
@@ -64,57 +62,40 @@ if (isset($_POST['submit'])) {
                 $result_sql_userdata_show_by_id = mysqli_query($conn, $sql_userdata_show_by_id) or die("Query Die!!");
                 if (mysqli_num_rows($result_sql_userdata_show_by_id) > 0) {
                     while ($row = mysqli_fetch_assoc($result_sql_userdata_show_by_id)) {
-                        ?>
-                        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data"
-                            autocomplete="off">
+                ?>
+                        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
                             <div class="form-group">
-                                <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['user_id'] ?>"
-                                    placeholder="">
+                                <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['user_id'] ?>" placeholder="">
                             </div>
                             <div class="form-group">
                                 <label>First Name</label>
-                                <input type="text" name="fname" class="form-control" value="<?php echo $row['first_name'] ?>"
-                                    placeholder="" required>
+                                <input type="text" name="fname" class="form-control" value="<?php echo $row['first_name'] ?>" placeholder="" required>
                             </div>
                             <div class="form-group">
                                 <label>Last Name</label>
-                                <input type="text" name="lname" class="form-control" value="<?php echo $row['last_name'] ?>"
-                                    placeholder="" required>
+                                <input type="text" name="lname" class="form-control" value="<?php echo $row['last_name'] ?>" placeholder="" required>
                             </div>
                             <div class="form-group">
                                 <label>User Name</label>
-                                <input type="text" name="username" class="form-control" value="<?php echo $row['username'] ?>"
-                                    placeholder="" required>
+                                <input type="text" name="username" class="form-control" value="<?php echo $row['username'] ?>" placeholder="" required>
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input type="text" name="password" class="form-control" value="<?php echo $row['password'] ?>"
-                                    placeholder="****" required>
+                                <input type="text" name="password" class="form-control" value="<?php echo $row['password'] ?>" placeholder="****" required>
                             </div>
                             <div class="form-group">
                                 <label>User Role</label>
                                 <select class="form-control" name="role" value="<?php echo $row['role'] ?>">
                                     <?php
                                     if ($row['role'] == 1) {
-                                        echo ("<option value='1' selected>Admin</option>
-                                        <option value='5'>Astrologiest</option>
-                                <option value='0'>Local</option>
-                                <option value='9'>End User</option>");
-                                    } elseif ($row['role'] == 5) {
-                                        echo ("<option value='1' >Admin</option>
-                                        <option value='5' selected>Astrologiest</option>
-                                <option value='0'>Local</option>
-                                <option value='9'>End User</option>");
+                                        echo ("<option value='1' selected>Admin</option>                                        
+                                         <option value='0'>Local</option>");
                                     } elseif ($row['role'] == 0) {
                                         echo ("<option value='1' >Admin</option>
-                                        <option value='5'>Astrologiest</option>
-                                <option value='0' selected>Local</option>
-                                <option value='9'>End User</option>");
-                                    } elseif ($row['role'] == 9) {
-                                        echo ("<option value='1' >Admin</option>
-                                        <option value='5'>Astrologiest</option>
-                                <option value='0'>Local</option>
-                                <option value='9' selected>End User</option>");
+                                        <option value='0' selected>Local</option>");
+                                    } else {
+                                        echo ("<option value='1'>Admin</option>
+                                        <option value='0'>Local</option>");
                                     }
                                     ?>
                                 </select>
@@ -122,15 +103,13 @@ if (isset($_POST['submit'])) {
                             <div class="form-group">
                                 <label for="">Profile picture</label>
                                 <input type="file" name="new-image">
-                                <img src="upload/member/<?php echo $row['img']; ?>" height="150px"
-                                    style="border-radius: 50%; margin-top:12px;">
+                                <img src="upload/member/<?php echo $row['img']; ?>" height="150px" style="border-radius: 50%; margin-top:12px;">
                                 <input type="hidden" name="old-image" value="<?php echo $row['img']; ?>">
                             </div>
-                            <input type="submit" name="submit" class="btn btn-primary" style="border-radius:16px;"
-                                value="Update" required />
+                            <input type="submit" name="submit" class="btn btn-primary" style="border-radius:16px;" value="Update" required />
                         </form>
                         <!-- /Form -->
-                        <?php
+                <?php
                     }
                 } ?>
                 <!-- PHP CODE -->
