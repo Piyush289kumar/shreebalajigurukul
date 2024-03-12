@@ -33,26 +33,42 @@
                     <div class="single-footer f-link">
                         <h2>Quick Links</h2>
                         <div class="row">
-                            <div class="col-lg-3 col-md-6 col-12">
+                            <div class="col-lg-4 col-md-6 col-12">
                                 <ul>
                                     <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
+                                        <a href="index.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
+                                        <a href="management.php"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a>
+                                        <a href="contact.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Event</a>
+                                        <a href="addmission.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Addmission</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a>
+                                        <a href="mandatory-information.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Mandatory Info.</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-lg-3 col-md-6 col-12 footerLinks">
+                            <div class="col-lg-4 col-md-6 col-12 footerLinks">
+                                <ul>
+                                    <li>
+                                        <a href="teacher-details.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Academics</a>
+                                    </li>
+                                    <li>
+                                        <a href="teacher-details.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Teacher Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="fees.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Fees</a>
+                                    </li>
+                                    <li>
+                                        <a href="rules-and-guidelines.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Guidelines</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="col-lg-3 col-md-6 col-12 footerLinks">
                                 <ul>
                                     <li>
                                         <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Event</a>
@@ -70,42 +86,23 @@
                                         <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <div class="col-lg-3 col-md-6 col-12 footerLinks">
                                 <ul>
                                     <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Event</a>
+                                        <a href="gallery.php?tab=Achievements"><i class="fa fa-caret-right" aria-hidden="true"></i>Achievement</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Examination</a>
+                                        <a href="gallery.php?tab=co-curricular-activity"><i class="fa fa-caret-right" aria-hidden="true"></i>Curricular</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Link 2</a>
+                                        <a href="gallery.php?tab=sport"><i class="fa fa-caret-right" aria-hidden="true"></i>Sport</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a>
+                                        <a href="gallery.php?tab=social-service"><i class="fa fa-caret-right" aria-hidden="true"></i>So.Service</a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-3 col-md-6 col-12 footerLinks">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Event</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Examination</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Link 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a>
+                                        <a href="gallery.php?tab=trips-and-excursions"><i class="fa fa-caret-right" aria-hidden="true"></i>Trips</a>
                                     </li>
                                 </ul>
                             </div>
@@ -155,7 +152,7 @@
                     <div class="copyright-content">
                         <p>
                             © Copyright 2024 | All Rights Reserved by
-                            <a href="#" target="_blank">abcdbefg.com</a>
+                            <a href="index.php" target="_blank">abcdbefg.com</a>
                         </p>
                     </div>
                 </div>
