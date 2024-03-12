@@ -68,6 +68,7 @@ switch ($current_page) {
     <!-- Custom stlylesheet -->
     <link rel="stylesheet" href="../css/adminstyle_centerI.css">
     <link rel="shortcut icon" type="x-con" href="../images/VSlogo.png">
+    <link rel="icon" href="../img/logo/graduation-cap.png" />
 </head>
 
 <body>
@@ -133,7 +134,7 @@ switch ($current_page) {
                         }
                         ?>
                         <li>
-                            <a href="logout.php">Logout</a>
+                            <a href="logout.php" style='background:#ff2e00; color:#fff;'>Logout</a>
                         </li>
                     </ul>
                 </div>
