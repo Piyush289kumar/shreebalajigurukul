@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
-<body style="overflow-x: hidden;">
+<body style="overflow-x: hidden;" onLoad="scrollDiv_init()">
     <!-- Preloader -->
     <div class="preloader">
         <div class="loader">

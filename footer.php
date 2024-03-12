@@ -208,6 +208,43 @@
 <script src="js/bootstrap.min.js"></script>
 <!-- Main JS -->
 <script src="js/main.js"></script>
+<!-- Auto Scroll Div JS -->
+<script language="javascript">
+    ScrollRate = 50;
+    function scrollDiv_init() {
+        DivElmnt1 = document.getElementById('MyDivName1');
+        DivElmnt2 = document.getElementById('MyDivName2');
+        DivElmnt3 = document.getElementById('MyDivName3');
+        ReachedMaxScroll = false;
+        DivElmnt1.scrollTop = 0;
+        DivElmnt2.scrollTop = 0;
+        DivElmnt3.scrollTop = 0;
+        PreviousScrollTop = 0;
+        PreviousScrollTop2 = 0;
+        PreviousScrollTop3 = 0;
+        ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+    }
+    function scrollDiv() {
+        if (!ReachedMaxScroll) {
+            DivElmnt1.scrollTop = PreviousScrollTop;
+            DivElmnt2.scrollTop = PreviousScrollTop;
+            DivElmnt3.scrollTop = PreviousScrollTop;
+            PreviousScrollTop++;
+            ReachedMaxScroll = DivElmnt1.scrollTop >= (DivElmnt1.scrollHeight - DivElmnt1.offsetHeight);
+        } else {
+            ReachedMaxScroll = (DivElmnt1.scrollTop == 0 || DivElmnt2.scrollTop == 0 || DivElmnt3.scrollTop == 0) ? false : true;
+            DivElmnt1.scrollTop = PreviousScrollTop;           
+            PreviousScrollTop--;
+            
+        }
+    }
+    function pauseDiv() {
+        clearInterval(ScrollInterval);
+    }
+    function resumeDiv() {
+        PreviousScrollTop = DivElmnt1.scrollTop;
+        ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+    }
+</script>
 </body>
-
 </html>
