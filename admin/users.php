@@ -38,7 +38,7 @@ if ($_SESSION['user_role'] == 0 || $_SESSION['user_role'] == 5 || $_SESSION['use
 
                         $record_limit = 5;
                         $offset = ($page_num_index_by_addbar - 1) * $record_limit;
-                        $sql_show_user = "SELECT * FROM user WHERE role = '1' OR role = '0' ORDER BY role DESC LIMIT {$offset},{$record_limit}";
+                        $sql_show_user = "SELECT * FROM user WHERE active_record = 'Yes' ORDER BY role DESC LIMIT {$offset},{$record_limit}";
                         $result_sql_show_user = mysqli_query($conn, $sql_show_user) or die("Query Failed!!");
                         if (mysqli_num_rows($result_sql_show_user) > 0) {
                             $serial_num = $offset + 1;
@@ -79,7 +79,7 @@ if ($_SESSION['user_role'] == 0 || $_SESSION['user_role'] == 5 || $_SESSION['use
                 </table>
                 <!-- Pagination PHHP CODE -->
                 <?php
-                $sql_user_show_by_page = "SELECT * FROM user WHERE role = '1' OR role = '0'";
+                $sql_user_show_by_page = "SELECT * FROM user WHERE active_record = 'Yes'";
                 $result_sql_user_show_by_page = mysqli_query($conn, $sql_user_show_by_page) or die("Query Die --> sql_user_show_by_page");
                 if (mysqli_num_rows($result_sql_user_show_by_page) > 0) {
                     $total_user_record = mysqli_num_rows($result_sql_user_show_by_page);

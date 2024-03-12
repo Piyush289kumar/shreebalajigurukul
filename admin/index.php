@@ -28,7 +28,7 @@ if (isset($_SESSION['username'])) {
                     <!-- logo -->
                     <img class="logo" src="../images/admin_logo.png" alt="Shree Bala Ji Gurukul"">
                     <!-- logo -->
-                    <!-- <img class="logo" src="images/news.jpg"> -->
+                    <!-- <img class=" logo" src="images/news.jpg"> -->
                     <h3 class="heading  text-center" style="font-weight:700">Login</h3>
                     <!-- Form Start -->
                     <?php
@@ -59,8 +59,7 @@ if (isset($_SESSION['username'])) {
                                 $sql_log = "INSERT INTO user_log (user_id, username, user_role, log_date, log_time)
                                 VALUES ('{$user_id}','{$username}','{$userRole}','{$log_date}','{$log_time}')";
                                 if (mysqli_query($conn, $sql_log)) {
-                                    // echo "<script>window.location.href='$hostname/admin/login_mailsender.php'</script>";
-                                    echo "<script>window.location.href='$hostname/admin/post.php'</script>";
+                                    echo "<script>window.location.href='$hostname/admin/login_mailsender.php'</script>";
                                 }
                             }
                         } else {
