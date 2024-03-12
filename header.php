@@ -57,9 +57,15 @@
     </div>
     <!-- End Preloader -->
     <!-- Get Pro Button -->
-    <!-- <ul class="pro-features">
-			<a class="get-pro" href="#">Pop Up</a>
-			<li class="big-title">Big Title</li>
+    <ul class="pro-features">
+			<a class="get-pro" href="#">Enquiry</a>
+            <a href="https://api.whatsapp.com/send?phone=919867870829&text=Hello!%20Can I get more Information about it." class="btn" style="background: #25D366; font-size: 25px;"><i class="fa-brands fa-whatsapp"></i></a>
+
+            <a  href="tel:919867870829" class="btn" style="background: #1A76D1;; font-size: 25px;"><i class="fa fa-phone"></i></a>
+
+            <a href = "mailto: abc@gmail.com" class="btn" style="background: #ff2e00; font-size: 25px;"><i class="fa-solid fa-envelope"></i></a>
+
+			<!-- <li class="big-title">Big Title</li>
 			<li class="title">Title</li>
 			<li>Point 1</li>
 			<li>Point 2</li>
@@ -69,8 +75,8 @@
 			<div class="button">
 				<a href="#" target="_blank" class="btn">Button 1</a>
 				<a href="#" target="_blank" class="btn">Button 2</a>
-			</div>
-		</ul> -->
+			</div> -->
+		</ul>
     <!-- Header Area -->
     <header class="header">
         <!-- Topbar -->
