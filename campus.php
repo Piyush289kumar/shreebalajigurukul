@@ -51,7 +51,7 @@
 			}
 			$record_limit = 10;
 			$offset = ($page_num_index_by_addbar - 1) * $record_limit;
-			$sql_show_user = "SELECT * FROM campus WHERE smtype = 'campus' ORDER BY smid LIMIT {$offset},{$record_limit}";
+			$sql_show_user = "SELECT * FROM campus WHERE smtype = 'campus' AND active_record = 'Yes' ORDER BY smid LIMIT {$offset},{$record_limit}";
 			$result_sql_show_user = mysqli_query($conn, $sql_show_user) or die("Query Failed!!");
 			if (mysqli_num_rows($result_sql_show_user) > 0) {
 				$serial_num = $offset + 1;
@@ -78,7 +78,7 @@
 
 		<!-- Pagination PHHP CODE -->
 		<?php
-                $sql_user_show_by_page = "SELECT * FROM campus WHERE smtype = 'campus'";
+                $sql_user_show_by_page = "SELECT * FROM campus WHERE smtype = 'campus' AND active_record = 'Yes'";
                 $result_sql_user_show_by_page = mysqli_query($conn, $sql_user_show_by_page) or die("Query Die --> sql_user_show_by_page");
                 if (mysqli_num_rows($result_sql_user_show_by_page) > 0) {
                     $total_user_record = mysqli_num_rows($result_sql_user_show_by_page);

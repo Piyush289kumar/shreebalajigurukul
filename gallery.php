@@ -78,7 +78,7 @@ if ($user_id_getaddbar == 'gallery') {
 					}
 					$record_limit = 10;
 
-					$sql_userdata_show_by_id = "SELECT * FROM achievement WHERE atype = '{$user_id_getaddbar}'";
+					$sql_userdata_show_by_id = "SELECT * FROM achievement WHERE atype = '{$user_id_getaddbar}' AND active_record = 'Yes'";
 					$result_sql_userdata_show_by_id = mysqli_query($conn, $sql_userdata_show_by_id) or die("Query Die!!");
 					if (mysqli_num_rows($result_sql_userdata_show_by_id) > 0) {
 						while ($row = mysqli_fetch_assoc($result_sql_userdata_show_by_id)) {
@@ -106,7 +106,7 @@ if ($user_id_getaddbar == 'gallery') {
 
 			<!-- Pagination PHHP CODE -->
 			<?php
-			$sql_user_show_by_page = "SELECT * FROM achievement WHERE atype = '{$user_id_getaddbar}'";
+			$sql_user_show_by_page = "SELECT * FROM achievement WHERE atype = '{$user_id_getaddbar}' AND active_record = 'Yes'";
 			$result_sql_user_show_by_page = mysqli_query($conn, $sql_user_show_by_page) or die("Query Die --> sql_user_show_by_page");
 			if (mysqli_num_rows($result_sql_user_show_by_page) > 0) {
 				$total_user_record = mysqli_num_rows($result_sql_user_show_by_page);
