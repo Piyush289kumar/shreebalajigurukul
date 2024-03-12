@@ -12,7 +12,7 @@ if ($_SESSION['user_role'] == 0) {
             </div>
             <div class="col-md-4">
                 <a class="add-new" href="campus-insert.php" style="border-radius:16px; margin-bottom:25px">Add
-                    Record Member</a>
+                    Record</a>
             </div>
             <div class="col-md-12" style="overflow:scroll">
                 <table class="content-table">

@@ -7,7 +7,7 @@
 				<div class="col-12">
 					<h2>Result</h2>
 					<ul class="bread-list">
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.php">Home</a></li>
 						<li><i class="icofont-simple-right"></i></li>
 						<li class="active">Result</li>
 					</ul>
@@ -17,7 +17,6 @@
 	</div>
 </div>
 <!-- End Breadcrumbs -->
-
 <section>
 	<div class="container">
 		<div class="row mt-4">
@@ -45,19 +44,12 @@
 						while ($row = mysqli_fetch_assoc($result_sql_show_user)) {
 					?>
 							<iframe src="admin/upload/pdf/<?php echo $row['pdf']; ?>" frameBorder="0" scrolling="auto" height="100%" width="100%" style="min-height:100vh; margin-bottom:35px; border-radius: 8px; margin-top:12px;"></iframe>
-
 					<?php }
 					} ?>
-
-
-
 				</section>
 				<!-- Table -->
 			</div>
 		</div>
-
-
 	</div>
 </section>
-
 <?php include 'footer.php' ?>

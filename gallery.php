@@ -76,7 +76,7 @@ if ($user_id_getaddbar == 'gallery') {
 					} else {
 						$page_num_index_by_addbar = 1;
 					}
-					$record_limit = 1;
+					$record_limit = 10;
 
 					$sql_userdata_show_by_id = "SELECT * FROM achievement WHERE atype = '{$user_id_getaddbar}'";
 					$result_sql_userdata_show_by_id = mysqli_query($conn, $sql_userdata_show_by_id) or die("Query Die!!");
