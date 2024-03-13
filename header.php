@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
-<body style="overflow-x: hidden;" onLoad="scrollDiv_init()">
+<body style="overflow-x: hidden !important;" onLoad="scrollDiv_init()">
     <!-- Preloader -->
     <div class="preloader">
         <div class="loader">
@@ -58,7 +58,7 @@
     <!-- End Preloader -->
     <!-- Get Pro Button -->
     <ul class="pro-features">
-			<a class="get-pro" href="#">Enquiry</a>
+			<a class="get-pro">Enquiry</a>
             <a href="https://api.whatsapp.com/send?phone=919867870829&text=Hello!%20Can I get more Information about it." class="btn" style="background: #25D366; font-size: 25px;"><i class="fa-brands fa-whatsapp"></i></a>
 
             <a  href="tel:919867870829" class="btn" style="background: #1A76D1;; font-size: 25px;"><i class="fa fa-phone"></i></a>

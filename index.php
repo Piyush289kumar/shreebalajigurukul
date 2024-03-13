@@ -57,13 +57,17 @@
 
 <!-- Admission Info Section Start  -->
 <section>
-  <div class="row">
-    <div class="col-12 admissionSection">
-      <h3>Admissions for the Academic Session 2024-25 are open</h3>
-      <p>
-        For more details, please contact: +91-1234567890 , +91-123456789
-      </p>
-      <a href="addmission.php" class="btn text-white">Click here for more details</a>
+  <div class="container-fluid">
+    <div class="row">
+
+
+      <div class="col-12 admissionSection">
+        <h3>Admissions for the Academic Session 2024-25 are open</h3>
+        <p>
+          For more details, please contact: +91-1234567890 , +91-123456789
+        </p>
+        <a href="addmission.php" class="btn text-white">Click here for more details</a>
+      </div>
     </div>
   </div>
 </section>
@@ -71,15 +75,11 @@
 
 <!-- Brochures Info Section Start  -->
 <section>
-  <div class="row brochuresSection">
-    <div class="col-md-4 mb-2">
-      <img src="img/brochures/brochuresImgBtn.png" alt="" />
-    </div>
-    <div class="col-md-4 mb-2">
-      <img src="img/brochures/brochuresImgBtn.png" alt="" />
-    </div>
-    <div class="col-md-4 mb-2">
-      <img src="img/brochures/brochuresImgBtn.png" alt="" />
+  <div class="container-fuild brochuresSection">
+    <div class="row">
+      <div class="col-md-12 mb-2">
+        <img src="img/back_to_school_facebook_cover_34.png" alt="Error" />
+      </div>
     </div>
   </div>
 </section>
@@ -173,7 +173,7 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-12  mx-2 mx-md-0 mb-2 mb-md-0">
+      <div class="col-11 mx-3 mx-md-0 mb-2 mb-md-0">
         <div class="row">
           <div class="col-4 mb-2" style="padding: 0; margin: 0">
             <img src="img/sport.jpg" alt="Error" />
