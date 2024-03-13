@@ -206,7 +206,7 @@
 
     <div class="row">
       <div class="col-md-12 text-center mt-3">
-        <button class="btn">View all</button>
+        <a href="gallery.php?tab=gallery" class="btn text-white">View all</a>
       </div>
     </div>
   </div>
