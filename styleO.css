@@ -843,7 +843,7 @@ body {
 	Start Infromation CSS
 ===============================*/
 ::-webkit-scrollbar {
-  background: transparent;
+  background: transparent !important;
 }
 .infobg {
   background-color: #132f57;
