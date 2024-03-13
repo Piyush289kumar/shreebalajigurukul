@@ -58,13 +58,11 @@
 			?>
 					<div class="row managementBox mb-4">
 						<div class="col-md-3">
-							<img src="img/principal.jpg" alt="Error" class="managementBoxImg">
+						<img src="admin/upload/campus/<?php echo ($row['smimg']) ?>"  alt="Error" class="managementBoxImg">
 						</div>
 						<div class="col-md-7">
-							<h5 class="managementHeading mt-2">Mrs. Madhu Jaiswal (Chairperson)</h5>
-							<p class="mt-4" class="managementParagraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat incidunt cum
-								eum dolorem, doloribus est, dignissimos id nobis, alias ab voluptatibus? Minus dolores iste
-								corrupti eveniet in repellat, inventore temporibus.</p>
+							<h5 class="managementHeading mt-2"><?php echo ($row['smname']) ?></h5>
+							<p class="mt-4" class="managementParagraph"><?php echo ($row['smdes']) ?></p>
 						</div>
 					</div>
 

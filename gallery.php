@@ -71,14 +71,15 @@ if ($user_id_getaddbar == 'gallery') {
 
 					<!-- PHP CODE -->
 					<?php include("config.php");
-					if (isset($_GET['page_num_index'])) {
+					 if (isset($_GET['page_num_index'])) {
 						$page_num_index_by_addbar = $_GET['page_num_index'];
 					} else {
 						$page_num_index_by_addbar = 1;
 					}
-					$record_limit = 10;
+					$record_limit = 8;
+					$offset = ($page_num_index_by_addbar - 1) * $record_limit;
 
-					$sql_userdata_show_by_id = "SELECT * FROM achievement WHERE atype = '{$user_id_getaddbar}' AND active_record = 'Yes'";
+					$sql_userdata_show_by_id = "SELECT * FROM achievement WHERE atype = '{$user_id_getaddbar}' AND active_record = 'Yes' ORDER BY aid DESC LIMIT {$offset},{$record_limit}";
 					$result_sql_userdata_show_by_id = mysqli_query($conn, $sql_userdata_show_by_id) or die("Query Die!!");
 					if (mysqli_num_rows($result_sql_userdata_show_by_id) > 0) {
 						while ($row = mysqli_fetch_assoc($result_sql_userdata_show_by_id)) {
