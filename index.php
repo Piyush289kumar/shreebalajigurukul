@@ -86,74 +86,7 @@
 <!-- Brochures Info Section Start  -->
 
 <!-- Academic Achievement Start portfolio -->
-<section class="portfolio section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-title">
-          <h2>Academic Achievement</h2>
-          <hr class="center-diamond">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-12">
-        <div class="owl-carousel portfolio-slider">
-          <div class="single-pf">
-            <button class="single-pf-btn">
-              2022-23 (CBSE 12TH BOARD RESULT)
-            </button>
-            <img src="img/card.jpg" alt="#" />
-          </div>
-          <div class="single-pf">
-            <button class="single-pf-btn">
-              2022-23 (CBSE 12TH BOARD RESULT)
-            </button>
-            <img src="img/card.jpg" alt="#" />
-          </div>
-          <div class="single-pf">
-            <button class="single-pf-btn">
-              2022-23 (CBSE 12TH BOARD RESULT)
-            </button>
-            <img src="img/card.jpg" alt="#" />
-          </div>
-          <div class="single-pf">
-            <button class="single-pf-btn">
-              2022-23 (CBSE 12TH BOARD RESULT)
-            </button>
-            <img src="img/card.jpg" alt="#" />
-          </div>
-          <div class="single-pf">
-            <button class="single-pf-btn">
-              2022-23 (CBSE 12TH BOARD RESULT)
-            </button>
-            <img src="img/card.jpg" alt="#" />
-          </div>
-          <div class="single-pf">
-            <button class="single-pf-btn">
-              2022-23 (CBSE 12TH BOARD RESULT)
-            </button>
-            <img src="img/card.jpg" alt="#" />
-          </div>
-          <div class="single-pf">
-            <button class="single-pf-btn">
-              2022-23 (CBSE 12TH BOARD RESULT)
-            </button>
-            <img src="img/card.jpg" alt="#" />
-          </div>
-          <div class="single-pf">
-            <button class="single-pf-btn">
-              2022-23 (CBSE 12TH BOARD RESULT)
-            </button>
-            <img src="img/card.jpg" alt="#" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php include 'achievementSection.php' ?>
 <!--/ Academic Achievement End portfolio -->
 
 
