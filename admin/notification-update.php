@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
                                 <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['nid'] ?>" placeholder="">
                             </div>
                             <div class="form-group">
-                                <label>Date</label>
+                                <label>Expiry Date</label>
                                 <input type="Date" name="ndate" class="form-control" value="<?php echo $row['ndate'] ?>" placeholder="Date" required>
                             </div>
                             <div class="form-group">

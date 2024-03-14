@@ -18,7 +18,8 @@ if ($_SESSION['user_role'] == 0) {
                 <table class="content-table">
                     <thead>
                         <th>S.No.</th>
-                        <th>Date</th>
+                        <th style='background:#ff2e00; color:#fff;'>Expiry Date</th>
+                        <th>Display</th>
                         <th>Title</th>
                         <th>Type</th>
                         <th>Edit</th>
@@ -47,9 +48,31 @@ if ($_SESSION['user_role'] == 0) {
                                     <td class='id'>
                                         <?php echo ($serial_num); ?>
                                     </td>
-                                    <td>
+                                    <td style='text-align: center;'>
                                         <?php echo ($row['ndate']) ?>
                                     </td>
+
+
+                                    <?php
+                                    if (($row['display']) == 'Yes') {
+                                    ?>
+                                        <td style='text-align: center; background: #25D366; color:#fff;'>
+                                            <?php echo ($row['display']) ?>
+                                        </td>
+                                    <?php
+                                    } else {
+                                        ?>
+                                        <td style='text-align: center; background: #ff2e00; color:#fff;'>
+                                            <?php echo ($row['display']) ?>
+                                        </td>
+                                    <?php
+                                    }
+
+                                    ?>
+
+
+
+
                                     <td>
                                         <?php echo ($row['ntitle']) ?>
                                     </td>

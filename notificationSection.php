@@ -20,7 +20,7 @@
 
           $record_limit = 10;
           $offset = ($page_num_index_by_addbar - 1) * $record_limit;
-          $sql_show_user = "SELECT * FROM notification WHERE ntype = 'Latest_News' AND active_record = 'Yes' ORDER BY nid DESC";
+          $sql_show_user = "SELECT * FROM notification WHERE ntype = 'Latest_News' AND active_record = 'Yes' AND `display` = 'Yes' ORDER BY nid DESC";
           $result_sql_show_user = mysqli_query($conn, $sql_show_user) or die("Query Failed!!");
           if (mysqli_num_rows($result_sql_show_user) > 0) {
             $serial_num = $offset + 1;
@@ -62,7 +62,7 @@
 
           $record_limit = 10;
           $offset = ($page_num_index_by_addbar - 1) * $record_limit;
-          $sql_show_user = "SELECT * FROM notification WHERE ntype = 'Upcoming_News' AND active_record = 'Yes' ORDER BY nid DESC";
+          $sql_show_user = "SELECT * FROM notification WHERE ntype = 'Upcoming_News' AND active_record = 'Yes' AND `display` = 'Yes' ORDER BY nid DESC";
           $result_sql_show_user = mysqli_query($conn, $sql_show_user) or die("Query Failed!!");
           if (mysqli_num_rows($result_sql_show_user) > 0) {
             $serial_num = $offset + 1;
@@ -103,7 +103,7 @@
 
           $record_limit = 10;
           $offset = ($page_num_index_by_addbar - 1) * $record_limit;
-          $sql_show_user = "SELECT * FROM notification WHERE ntype = 'Achievements' AND active_record = 'Yes' ORDER BY nid DESC";
+          $sql_show_user = "SELECT * FROM notification WHERE ntype = 'Achievements' AND active_record = 'Yes' AND `display` = 'Yes' ORDER BY nid DESC";
           $result_sql_show_user = mysqli_query($conn, $sql_show_user) or die("Query Failed!!");
           if (mysqli_num_rows($result_sql_show_user) > 0) {
             $serial_num = $offset + 1;
