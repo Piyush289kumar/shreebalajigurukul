@@ -63,13 +63,14 @@
     <div class="inner mt-5">
       <div class="row">
         <div class="col-lg-6">
-          <div class="contact-us-left">
-            <!--Start Google-map -->
-            <div id="myMap"></div>
-            <!--/End Google-map -->
-          </div>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="820" height="560" id="gmap_canvas" src="https://maps.google.com/maps?q=jabalpur&t=&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://online.stopwatch-timer.net/pomodoro-timer">tomato timer</a><br><a href="https://www.calc-calc.com/">calculator</a><br><style>.mapouter{position: relative;text-align: right;height: 560px;width: 820px;}</style><a href="https://www.ongooglemaps.com">location map</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 560px;width: 100%;}</style></div></div>
+          <!-- <div class="contact-us-left">
+            <!-Start Google-map -->
+            
+            <!--/End Google-map ->
+          </div> -->
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" style="background: #fff;">
           <div class="contact-us-form">
             <h2>Contact With Us</h2>
             <p>If you have any questions please fell free to contact with us.</p>
