@@ -31,9 +31,9 @@
                 <?php
                 $dateDay =  explode("-", $row['ndate']);
                 $dateMonth = explode("-", $row['ndate']);
-                $month_name = date("F", mktime(0, 0, 0, $dateMonth[2], 10)); // Generating the month name using the mktime function.
+                $month_name = date("F", mktime(0, 0, 0, $dateDay[1], 10)); // Generating the month name using the mktime function.
                 ?>
-                <p><?php echo $dateDay[1] ?> <?php echo substr($month_name, 0, 3) ?></p>
+                <p><?php echo $dateDay[2] ?> <?php echo substr($month_name, 0, 3) ?></p>
                 <?php echo ($row['ntitle']) ?>
               </li>
           <?php }
@@ -73,9 +73,9 @@
                 <?php
                 $dateDay =  explode("-", $row['ndate']);
                 $dateMonth = explode("-", $row['ndate']);
-                $month_name = date("F", mktime(0, 0, 0, $dateMonth[2], 10)); // Generating the month name using the mktime function.
+                $month_name = date("F", mktime(0, 0, 0, $dateDay[1], 10)); // Generating the month name using the mktime function.
                 ?>
-                <p><?php echo $dateDay[1] ?> <?php echo substr($month_name, 0, 3) ?></p>
+                <p><?php echo $dateDay[2] ?> <?php echo substr($month_name, 0, 3) ?></p>
                 <?php echo ($row['ntitle']) ?>
               </li>
           <?php }
@@ -92,8 +92,8 @@
           <i class="fa-solid fa-trophy" style="margin-right: 5px"></i>Achievements
         </div>
         <ol id="MyDivName3" style="overflow:auto;" onMouseOver="pauseDiv()" onMouseOut="resumeDiv()">
-         <!-- PHP CODE -->
-         <?php
+          <!-- PHP CODE -->
+          <?php
           include("config.php");
           if (isset($_GET['page_num_index'])) {
             $page_num_index_by_addbar = $_GET['page_num_index'];
@@ -114,9 +114,9 @@
                 <?php
                 $dateDay =  explode("-", $row['ndate']);
                 $dateMonth = explode("-", $row['ndate']);
-                $month_name = date("F", mktime(0, 0, 0, $dateMonth[2], 10)); // Generating the month name using the mktime function.
+                $month_name = date("F", mktime(0, 0, 0, $dateDay[1], 10)); // Generating the month name using the mktime function.
                 ?>
-                <p><?php echo $dateDay[1] ?> <?php echo substr($month_name, 0, 3) ?></p>
+                <p><?php echo $dateDay[2] ?> <?php echo substr($month_name, 0, 3) ?></p>
                 <?php echo ($row['ntitle']) ?>
               </li>
           <?php }
