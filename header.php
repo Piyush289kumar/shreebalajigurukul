@@ -135,7 +135,7 @@
                                             <a href="teacher-details.php">Academics<i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
                                                 <li><a href="teacher-details.php">Teacher Details</a></li>
-                                                <li><a href="fees.php">Fees</a></li>
+                                                <li><a href="fees.php">Fees Structure</a></li>
                                                 <li><a href="rules-and-guidelines.php">Rules and Guidelines</a></li>
                                                 <!-- <li><a href="#">Transfer Certificates</a></li> -->
                                             </ul>
