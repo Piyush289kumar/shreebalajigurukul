@@ -11,7 +11,7 @@ if ($_SESSION['user_role'] == 0) {
                 <h5 class="admin-heading">Fees Structure</h5>
             </div>
             <div class="col-md-4">
-                <a class="add-new" href="pdf-insert.php" style="border-radius:16px; margin-bottom:25px">Add Fees Structure</a>
+                <a class="add-new" href="fees-insert.php" style="border-radius:16px; margin-bottom:25px">Add Fees Structure</a>
             </div>
             <div class="col-md-12" style="overflow:scroll">
                 <table class="content-table">
