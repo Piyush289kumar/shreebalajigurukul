@@ -115,6 +115,9 @@ switch ($current_page) {
                             <a href="pdf-read.php">PDF</a>
                         </li>
                         <li>
+                            <a href="fees-read.php">Fees Structure</a>
+                        </li>
+                        <li>
                             <a href="campus-read.php">Campus & Career</a>
                         </li>
                         <!-- <php
