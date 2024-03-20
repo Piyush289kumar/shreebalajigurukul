@@ -80,8 +80,6 @@ if ($_SESSION['user_role'] == 0) {
                         <label>PDF Type</label>
                         <select class="form-control" name="ptype">
                             <option value="none" selected disabled><- Select PDF Type -></option>
-                            <option value="Mandatory_Information">Mandatory Information</option>
-                            <option value="Fees">Fees</option>
                             <option value="Rules_and_Guidelines">Rules and Guidelines</option>
                             <option value="Result">Result</option>
                         </select>
