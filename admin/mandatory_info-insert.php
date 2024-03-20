@@ -7,10 +7,10 @@ if ($_SESSION['user_role'] == 0) {
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <h1 class="admin-heading">Add Fees Structure</h1>
+                <h1 class="admin-heading">Add Mandatory Info</h1>
             </div>
             <div class="col-md-2">
-                <a class="add-new" style="background:#E1412E; border-radius:16px; margin-bottom:25px;" href="pdf-read.php"><i class="fa-solid fa-arrow-left"></i> Back</a>
+                <a class="add-new" style="background:#E1412E; border-radius:16px; margin-bottom:25px;" href="mandatory_info-read.php"><i class="fa-solid fa-arrow-left"></i> Back</a>
             </div>
             <div class="col-md-offset-3 col-md-6">
                 <!-- Form Start -->
@@ -24,7 +24,7 @@ if ($_SESSION['user_role'] == 0) {
                         $file_size = $_FILES['fileToUpload']["size"];
                         $tempFileExt = explode('.', $file_name);
                         $file_ext = strtolower(end($tempFileExt));
-                        $allow_extension = array("doc", "docx");
+                        $allow_extension = array("pdf");
                         $file_error = array();
 
                         if (in_array($file_ext, $allow_extension) === false) {
@@ -34,7 +34,7 @@ if ($_SESSION['user_role'] == 0) {
                             $file_error[] = "Image must be 5mb or lower.";
                         }
                         $save_img_name =  date("d_M_Y_h_i_sa") . "_" . basename($file_name);
-                        $img_save_target = "upload/feesStructure/";
+                        $img_save_target = "upload/mandatory_info/";
                         if (empty($file_error) == true) {
                             move_uploaded_file($file_tmp, $img_save_target . $save_img_name);
                         } else {
@@ -49,22 +49,22 @@ if ($_SESSION['user_role'] == 0) {
                     $userId = $_SESSION['username'];
                     $pname = mysqli_real_escape_string($conn, $_POST['pname']);
                     $ptype = 'Fees';
-                    $sql_insert_user = "INSERT INTO pdf (pdate, pname, ptype, puserId, pdf, pyear)
-                                    values('{$ndate}','{$pname}','{$ptype}','{$userId}','{$save_img_name}', '{$year}')";
+                    $sql_insert_user = "INSERT INTO mandatory_info (mdate, mname, muserId, link, myear)
+                                    values('{$ndate}','{$pname}','{$userId}','{$save_img_name}', '{$year}')";
                     if (mysqli_query($conn, $sql_insert_user)) {
                 ?>
                         <script>
                             alert('Record is added successfully !!')
                         </script>
                     <?php
-                        echo "<script>window.location.href='$hostname/admin/fees-read.php'</script>";
+                        // echo "<script>window.location.href='$hostname/admin/fees-read.php'</script>";
                     } else {
                     ?>
                         <script>
                             alert('Record is Not added !!')
                         </script>
                 <?php
-                        echo "<script>window.location.href='$hostname/admin/fess-read.php'</script>";
+                        // echo "<script>window.location.href='$hostname/admin/fess-read.php'</script>";
                     }
                 }
 
