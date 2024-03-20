@@ -128,7 +128,7 @@
                                             <a href="management.php">About Us <i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
                                                 <li><a href="management.php">Management </a></li>
-                                                <li><a href="mandatory-information.php">Mandatory Information</a></li>
+                                                <li><a href="mandatory-information-table.php">Mandatory Information</a></li>
                                             </ul>
                                         </li>
                                         <li>

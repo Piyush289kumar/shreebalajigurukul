@@ -5,13 +5,13 @@
 		<div class="bread-inner">
 			<div class="row">
 				<div class="col-12">
-					<h2>Teacher Details</h2>
+					<h2>mandatory Information</h2>
 					<ul class="bread-list">
 						<li><a href="index.php">Home</a></li>
 						<li><i class="icofont-simple-right"></i></li>
 						<li><a href="index.php">Academics</a></li>
 						<li><i class="icofont-simple-right"></i></li>
-						<li class="active">Teacher Details</li>
+						<li class="active">Mandatory Information</li>
 					</ul>
 				</div>
 			</div>
@@ -25,7 +25,7 @@
 		<div class="row mt-4">
 			<div class="col-md-12 mt-4">
 				<div class="section-title">
-					<h2>Staff Information</h2>
+					<h2>Mandatory Information</h2>
 					<hr class="center-diamond">
 				</div>
 				<!-- Table -->
@@ -37,14 +37,14 @@
 									<div class="col-12">
 										<div class="card">
 											<div class="card-body p-0">
-												<div class="table-responsive table-scroll" data-mdb-perfect-scrollbar="true" style="position: relative; height: 600px">
+												<div class="table-responsive table-scroll" data-mdb-perfect-scrollbar="true" style="position: relative;">
 													<table class="table table-striped mb-0">
 														<thead style="background-color: #002d72; color: #fff;">
 															<tr>
 
-																<th scope="col">Profile</th>
-																<th scope="col">Name & Designation </th>
-																<th scope="col">Details</th>
+																<th scope="col" style="width: 85%;">Mandatory Information</th>
+																
+																<th scope="col" style="width: 15%; text-align:center;">Link</th>
 															</tr>
 														</thead>
 														<tbody style="text-align:left">
@@ -59,34 +59,20 @@
 															}
 															$record_limit = 10;
 															$offset = ($page_num_index_by_addbar - 1) * $record_limit;
-															$sql_show_user = "SELECT * FROM staff_info WHERE active_record = 'Yes' ORDER BY stid";
+															$sql_show_user = "SELECT * FROM mandatory_info WHERE active_record = 'Yes' ORDER BY mid DESC";
 															$result_sql_show_user = mysqli_query($conn, $sql_show_user) or die("Query Failed!!");
 															if (mysqli_num_rows($result_sql_show_user) > 0) {
 																$serial_num = $offset + 1;
 																while ($row = mysqli_fetch_assoc($result_sql_show_user)) {
 															?>
 																	<tr>
-																		<td>
-																			<img src="admin/upload/staff_member/<?php echo ($row['stimg']) ?>" alt="Error" style="min-width: 35vh;" class="teacherDetailsImg">
-																		</td>
+																		
 																		<td style="color:#002d72">
-																			<?php echo ($row['stname']) ?>
-																			<p class="TeachertdParagraph">
-																				<?php echo ($row['stpost']) ?>
-																			</p>
+																			<?php echo ($row['mname']) ?>																			
 																		</td>
-																		<td>
-																			<p class="TeachertdParagraph">
-																				Qualification :
-																				<?php echo ($row['stq']) ?><br>
-																				Experience :
-																				<?php echo ($row['stex']) ?><br>
-																				Phone :
-																				<?php echo ($row['stphone']) ?><br>
-																				Email :
-																				<?php echo ($row['stemail']) ?>
-																			</p>
-
+																		<td style="text-align:center;">
+																			
+																		<a class="btn" style="color:#fff;" href="mandatory-information.php?id=<?php echo ($row["mid"]) ?>"><i class="fa-solid fa-file-pdf" style='font-size:22px; padding-right: 8px; color:#fff;'></i>View</a>
 																		</td>
 
 																	</tr>
