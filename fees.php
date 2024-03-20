@@ -5,13 +5,13 @@
 		<div class="bread-inner">
 			<div class="row">
 				<div class="col-12">
-					<h2>Fees</h2>
+					<h2>Fees Structure</h2>
 					<ul class="bread-list">
 						<li><a href="index.html">Home</a></li>
 						<li><i class="icofont-simple-right"></i></li>
 						<li><a href="index.html">Academics</a></li>
 						<li><i class="icofont-simple-right"></i></li>
-						<li class="active">Fees</li>
+						<li class="active">Fees Structure</li>
 					</ul>
 				</div>
 			</div>
@@ -25,7 +25,7 @@
 		<div class="row mt-4">
 			<div class="col-md-12 mt-4">
 				<div class="section-title">
-					<h2>Fees</h2>
+					<h2>Fees Structure</h2>
 					<hr class="center-diamond">
 				</div>
 				<!-- Table -->
@@ -46,7 +46,9 @@
 						$serial_num = $offset + 1;
 						while ($row = mysqli_fetch_assoc($result_sql_show_user)) {
 					?>
-							<iframe src="admin/upload/pdf/<?php echo $row['pdf']; ?>" frameBorder="0" scrolling="auto" height="100%" width="100%" style="min-height:100vh; margin-bottom:35px; border-radius: 8px; margin-top:12px;"></iframe>
+							<!-- <iframe src="admin/upload/pdf/<php echo $row['pdf']; ?>" frameBorder="0" scrolling="auto" height="100%" width="100%" style="min-height:100vh; margin-bottom:35px; border-radius: 8px; margin-top:12px;"></iframe> -->
+
+							<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=<?php echo $hostname ?>/admin/upload/feesStructure/<?php echo $row['pdf']; ?>" frameBorder="0" scrolling="auto" height="100%" width="100%" style="min-height:100vh; margin-bottom:35px; border-radius: 8px; margin-top:12px;"></iframe>
 
 					<?php }
 					} ?>
