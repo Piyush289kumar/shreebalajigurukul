@@ -80,13 +80,13 @@ if (isset($_POST['submit'])) {
                                 <label>Title</label>
                                 <input type="text" name="atitle" class="form-control" value="<?php echo $row['pname'] ?>" placeholder="PDF Title" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="">MS Word File</label>
                                 <input type="file" name="new-image">
                                 <!-- 
                                 <img src="upload/pdf/<php echo $row['pdf']; ?>" height="150px" style="border-radius: 4px; margin-top:12px;"> -->
-                                <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=http://localhost/admin/upload/feesStructure/<?php echo $row['pdf']; ?>" frameBorder="0" scrolling="auto" height="500px" width="100%" style="border-radius: 4px; margin-top:12px;"></iframe>
+                                <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=http://<?php echo $hostname ?>/admin/upload/feesStructure/<?php echo $row['pdf']; ?>" frameBorder="0" scrolling="auto" height="500px" width="100%" style="border-radius: 4px; margin-top:12px;"></iframe>
                                 <input type="hidden" name="old-image" value="<?php echo $row['pdf']; ?>">
                             </div>
                             <input type="submit" name="submit" class="btn btn-primary" style="border-radius:16px;" value="Update" required />
