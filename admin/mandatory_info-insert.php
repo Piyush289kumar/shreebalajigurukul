@@ -57,14 +57,14 @@ if ($_SESSION['user_role'] == 0) {
                             alert('Record is added successfully !!')
                         </script>
                     <?php
-                        // echo "<script>window.location.href='$hostname/admin/fees-read.php'</script>";
+                        echo "<script>window.location.href='$hostname/admin/mandatory_info-read.php'</script>";
                     } else {
                     ?>
                         <script>
                             alert('Record is Not added !!')
                         </script>
                 <?php
-                        // echo "<script>window.location.href='$hostname/admin/fess-read.php'</script>";
+                        echo "<script>window.location.href='$hostname/admin/mandatory_info-read.php'</script>";
                     }
                 }
 
@@ -77,7 +77,7 @@ if ($_SESSION['user_role'] == 0) {
                         <input type="text" name="pname" class="form-control" placeholder="Title" required>
                     </div>
                     <div class="form-group">
-                        <label>MS Word File</label>
+                        <label>PDF</label>
                         <input type="file" name="fileToUpload" required>
                     </div>
                     <input type="submit" name="save" class="btn btn-primary" style="border-radius:16px;" value="Save" required />

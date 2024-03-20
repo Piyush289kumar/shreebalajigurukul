@@ -85,8 +85,10 @@ switch ($current_page) {
                 <!-- /LOGO -->
                 <!-- LOGO-Out -->
                 <div class="col-md-offset-6  col-md-3">
-                    <a href="<?php echo $hostname; ?>" class="admin-logout">Hello <?php echo $_SESSION['username']; ?>,
-                        back</a>
+                    <a href="<?php echo $hostname; ?>" class="admin-logout">Hello
+                        <?php echo $_SESSION['username']; ?>,
+                        back
+                    </a>
                 </div>
                 <!-- /LOGO-Out -->
             </div>
@@ -109,14 +111,19 @@ switch ($current_page) {
                             <a href="staff_info-read.php">Staff</a>
                         </li>
                         <li>
-                            <a href="achievement-read.php">Gallery</a>
+                            <a href="mandatory_info-read.php">Mandatory Info</a>
+                        </li>
+                        <li>
+                            <a href="fees-read.php">Fees Structure</a>
                         </li>
                         <li>
                             <a href="pdf-read.php">PDF</a>
                         </li>
                         <li>
-                            <a href="fees-read.php">Fees Structure</a>
+                            <a href="achievement-read.php">Gallery</a>
                         </li>
+
+
                         <li>
                             <a href="campus-read.php">Campus & Career</a>
                         </li>

@@ -10,10 +10,10 @@ $user_id_getaddbar = $_GET['id'];
 </script>
 <?php
 
-$sql_delete_user = "UPDATE pdf SET active_record = 'no' WHERE pid = '{$user_id_getaddbar}'";
+$sql_delete_user = "UPDATE mandatory_info SET active_record = 'no' WHERE mid = '{$user_id_getaddbar}'";
 
 if (mysqli_query($conn, $sql_delete_user)) {
-    echo "<script>window.location.href='$hostname/admin/fees-read.php'</script>";
+    echo "<script>window.location.href='$hostname/admin/mandatory_info-read.php'</script>";
 } else {
     echo ("<p style='color:red; margin:10px 0;'>Can't Delete the Record.");
 }

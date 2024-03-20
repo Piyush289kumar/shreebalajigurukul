@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
             $file_size = $_FILES['new-image']["size"];
             $tempFileExt = explode('.', $file_name);
             $file_ext = strtolower(end($tempFileExt));
-            $allow_extension = array("doc", "docx");
+            $allow_extension = array("pdf");
             $file_error = array();
             if (in_array($file_ext, $allow_extension) === false) {
                 $file_error[] = "This extension file not allowed, Please choose a PDF file.";
@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
                 $file_error[] = "Image must be 2mb or lower.";
             }
             $save_img_name = date("d_M_Y_h_i_sa") . "_" . basename($file_name);
-            $img_save_target = "upload/feesStructure/";
+            $img_save_target = "upload/mandatory_info/";
             if (empty($file_error) == true) {
                 move_uploaded_file($file_tmp, $img_save_target . $save_img_name);
             } else {
@@ -36,14 +36,14 @@ if (isset($_POST['submit'])) {
     }
     $ntitle = mysqli_real_escape_string($conn, $_POST['atitle']);
     $ptype = 'Fees';
-    $sql_update_user = "UPDATE pdf SET pname = '{$ntitle}', ptype = '{$ptype}', pdf = '{$save_img_name}' WHERE pid ='{$user_id_getaddbar}'";
+    $sql_update_user = "UPDATE mandatory_info SET mname = '{$ntitle}', link = '{$save_img_name}' WHERE mid ='{$user_id_getaddbar}'";
     if (mysqli_query($conn, $sql_update_user)) {
 ?>
         <script>
             alert('Record is Update successfully !!')
         </script>
     <?php
-        echo "<script>window.location.href='$hostname/admin/fees-read.php'</script>";
+        echo "<script>window.location.href='$hostname/admin/mandatory_info-read.php'</script>";
     } else {
     ?>
         <script>
@@ -57,38 +57,39 @@ if (isset($_POST['submit'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="admin-heading" style='font-size:25px; margin-bottom:25px;'>Modify Fees Structure Details</h1>
+                <h1 class="admin-heading" style='font-size:25px; margin-bottom:25px;'>Modify Mandatory Info Details</h1>
             </div>
             <div class="col-md-2">
-                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="fees-read.php"><i class="fa-solid fa-arrow-left"></i>
+                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="mandatory_info-read.php"><i class="fa-solid fa-arrow-left"></i>
                     Back</a>
             </div>
             <div class="col-md-offset-1 col-md-10">
                 <!-- Form Start -->
                 <!-- PHP CODE -->
                 <?php include("config.php");
-                $sql_userdata_show_by_id = "SELECT * FROM pdf WHERE pid = '{$user_id_getaddbar}'";
+                $sql_userdata_show_by_id = "SELECT * FROM mandatory_info WHERE mid = '{$user_id_getaddbar}'";
                 $result_sql_userdata_show_by_id = mysqli_query($conn, $sql_userdata_show_by_id) or die("Query Die!!");
                 if (mysqli_num_rows($result_sql_userdata_show_by_id) > 0) {
                     while ($row = mysqli_fetch_assoc($result_sql_userdata_show_by_id)) {
                 ?>
                         <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
                             <div class="form-group">
-                                <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['pid'] ?>" placeholder="">
+                                <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['mid'] ?>" placeholder="">
                             </div>
                             <div class="form-group">
                                 <label>Title</label>
-                                <input type="text" name="atitle" class="form-control" value="<?php echo $row['pname'] ?>" placeholder="PDF Title" required>
+                                <input type="text" name="atitle" class="form-control" value="<?php echo $row['mname'] ?>" placeholder="PDF Title" required>
                             </div>
 
                             <div class="form-group">
-                                <label for="">MS Word File</label>
+                                <label for="">PDF</label>
                                 <input type="file" name="new-image">
                                 <!-- 
                                 <img src="upload/pdf/<php echo $row['pdf']; ?>" height="150px" style="border-radius: 4px; margin-top:12px;"> -->
-                                <iframe src="https://view.officeapps.live.com/op/embed.aspx?src=<?php echo $hostname ?>/admin/upload/feesStructure/<?php echo $row['pdf']; ?>" frameBorder="0" scrolling="auto" height="500px" width="100%" style="border-radius: 4px; margin-top:12px;"></iframe>
-                                <input type="hidden" name="old-image" value="<?php echo $row['pdf']; ?>">
+                                <iframe src="upload/mandatory_info/<?php echo $row['link']; ?>" frameBorder="0" scrolling="auto" height="500px" width="100%" style="border-radius: 4px; margin-top:12px;"></iframe>
+                                <input type="hidden" name="old-image" value="<?php echo $row['link']; ?>">
                             </div>
+
                             <input type="submit" name="submit" class="btn btn-primary" style="border-radius:16px;" value="Update" required />
                         </form>
                         <!-- /Form -->
