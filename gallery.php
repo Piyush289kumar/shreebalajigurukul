@@ -58,7 +58,7 @@ if ($user_id_getaddbar == 'gallery') {
 				<div class="col-md-12">
 					<!-- <button class="btn">2021-22</button>
 					<button class="btn">2022-23</button> -->
-					<a href="gallery.php?tab=<?php echo $user_id_getaddbar ?>" class="btn text-white ">2023</a>
+					<!-- <a href="gallery.php?tab=<php echo $user_id_getaddbar ?>" class="btn text-white ">2023</a> -->
 				</div>
 			</div>
 		</div>
@@ -85,9 +85,9 @@ if ($user_id_getaddbar == 'gallery') {
 						while ($row = mysqli_fetch_assoc($result_sql_userdata_show_by_id)) {
 					?>
 
-							<div class="col-md-3 my-3" style="cursor: pointer;">
+							<div class="col-md-4 my-4" style="cursor: pointer;">
 								<img src="admin/upload/achievement/<?php echo $row['aimg']; ?>" alt="Error" style="border: 4px solid #1a76d1; border-top-left-radius: 8px; border-top-right-radius: 8px;">
-								<p class="text-center py-1 mb-2" style="height: 60px; overflow-y: scroll; scrollbar-width: none; color: #fff; background: #1a76d1; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; padding:0px 2px;"><?php echo $row['atitle'] ?></p>
+								<!-- <p class="text-center py-1 mb-2" style="height: 60px; overflow-y: scroll; scrollbar-width: none; color: #fff; background: #1a76d1; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; padding:0px 2px;"><php echo $row['atitle'] ?></p> -->
 							</div>
 
 						<?php }
