@@ -7,9 +7,9 @@
 				<div class="col-12">
 					<h2>Teacher Details</h2>
 					<ul class="bread-list">
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.php">Home</a></li>
 						<li><i class="icofont-simple-right"></i></li>
-						<li><a href="index.html">Academics</a></li>
+						<li><a href="index.php">Academics</a></li>
 						<li><i class="icofont-simple-right"></i></li>
 						<li class="active">Teacher Details</li>
 					</ul>

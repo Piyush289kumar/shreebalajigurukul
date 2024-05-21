@@ -84,34 +84,16 @@ if (isset($_POST['submit'])) {
                                 <label>PDF Type</label>
                                 <select class="form-control" name="ptype" value="<?php echo $row['ptype'] ?>">
                                     <?php
-                                    if ($row['ptype'] == 'Mandatory_Information') {
-                                        echo ('<option value="none" disabled><- Select PDF Type -></option>
-                                        <option value="Mandatory_Information" selected>Mandatory Information</option>
-                                        <option value="Fees">Fees</option>
-                                        <option value="Rules_and_Guidelines">Rules and Guidelines</option>
-                                        <option value="Result">Result</option>');
-                                    } elseif ($row['ptype'] == 'Fees') {
-                                        echo ('<option value="none" disabled><- Select PDF Type -></option>
-                                        <option value="Mandatory_Information">Mandatory Information</option>
-                                        <option value="Fees" selected>Fees</option>
-                                        <option value="Rules_and_Guidelines">Rules and Guidelines</option>
-                                        <option value="Result">Result</option>');
-                                    } elseif ($row['ptype'] == 'Rules_and_Guidelines') {
-                                        echo ('<option value="none" disabled><- Select PDF Type -></option>
-                                        <option value="Mandatory_Information">Mandatory Information</option>
-                                        <option value="Fees" >Fees</option>
+                                    if ($row['ptype'] == 'Rules_and_Guidelines') {
+                                        echo ('<option value="none" disabled><- Select PDF Type -></option>                                       
                                         <option value="Rules_and_Guidelines" selected>Rules and Guidelines</option>
                                         <option value="Result">Result</option>');
                                     } elseif ($row['ptype'] == 'Result') {
                                         echo ('<option value="none" disabled><- Select PDF Type -></option>
-                                        <option value="Mandatory_Information">Mandatory Information</option>
-                                        <option value="Fees" >Fees</option>
                                         <option value="Rules_and_Guidelines">Rules and Guidelines</option>
                                         <option value="Result" selected>Result</option>');
                                     } else {
                                         echo ('<option value="none" selected disabled><- Select PDF Type -></option>
-                                        <option value="Mandatory_Information">Mandatory Information</option>
-                                        <option value="Fees" >Fees</option>
                                         <option value="Rules_and_Guidelines">Rules and Guidelines</option>
                                         <option value="Result">Result</option>');
                                     }

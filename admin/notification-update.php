@@ -9,8 +9,9 @@ if (isset($_POST['submit'])) {
     $ndate = mysqli_real_escape_string($conn, $_POST['ndate']);
     $ntitle = mysqli_real_escape_string($conn, $_POST['ntitle']);
     $ntype = mysqli_real_escape_string($conn, $_POST['ntype']);
+    $display = mysqli_real_escape_string($conn, $_POST['display']);
 
-    $sql_update_user = "UPDATE notification SET ndate = '{$ndate}', ntitle = '{$ntitle}', ntype ='{$ntype}' WHERE nid ='{$user_id_getaddbar}'";
+    $sql_update_user = "UPDATE notification SET ndate = '{$ndate}', ntitle = '{$ntitle}', ntype ='{$ntype}' , display ='{$display}'  WHERE nid ='{$user_id_getaddbar}'";
     if (mysqli_query($conn, $sql_update_user)) {
         echo "<script>window.location.href='$hostname/admin/notification-read.php'</script>";
     } else {
@@ -42,12 +43,27 @@ if (isset($_POST['submit'])) {
                                 <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['nid'] ?>" placeholder="">
                             </div>
                             <div class="form-group">
-                                <label>Date</label>
+                                <label>Expiry Date</label>
                                 <input type="Date" name="ndate" class="form-control" value="<?php echo $row['ndate'] ?>" placeholder="Date" required>
                             </div>
                             <div class="form-group">
                                 <label>Title</label>
                                 <input type="text" name="ntitle" class="form-control" value="<?php echo $row['ntitle'] ?>" placeholder="Title" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Notification Display</label>
+                                <select class="form-control" name="display" value="<?php echo $row['display'] ?>">
+                                    <?php
+                                    if ($row['display'] == 'Yes') {
+                                        echo ("<option value='Yes'selected>Yes</option>
+                                        <option value='No'>No</option>");
+                                    } else {
+                                        echo ("<option value='Yes'>Yes</option>
+                                        <option value='No' selected>No</option>");
+                                    }
+                                    ?>
+                                </select>
                             </div>
 
                             <div class="form-group">

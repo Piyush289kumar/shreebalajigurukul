@@ -42,7 +42,7 @@ if ($_SESSION['user_role'] == 0) {
                 ?>
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" autocomplete="off" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label>Date</label>
+                        <label>Expiry Date</label>
                         <input type="date" name="ndate" class="form-control" placeholder="Date" required>
                     </div>
                     <div class="form-group">

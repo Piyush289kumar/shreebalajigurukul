@@ -1,7 +1,7 @@
 <?php
 include('phpmailer_smtp/smtp/PHPMailerAutoload.php');
 include('config.php');
-$end_user_email = "offficepiyushraikwar289@gmail.com";
+$end_user_email = "officepiyushraikwar289@gmail.com";
 $subject = "Account Login Notification";
 
 $body = "Your <b>" . $website_display_default_name . " ADMIN</b> Account was just used to <b>SIGN IN</b> by following information : <br>================================<br>" .

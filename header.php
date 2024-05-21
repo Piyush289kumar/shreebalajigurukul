@@ -42,7 +42,7 @@
 </head>
 
 <body style="overflow-x: hidden !important;" onLoad="scrollDiv_init()">
-    <!-- Preloader -->
+    <!-- Preloader 
     <div class="preloader">
         <div class="loader">
             <div class="loader-outter"></div>
@@ -55,7 +55,7 @@
             </div>
         </div>
     </div>
-    <!-- End Preloader -->
+     End Preloader -->
     <!-- Get Pro Button -->
     <ul class="pro-features">
 			<a class="get-pro">Enquiry</a>
@@ -128,19 +128,19 @@
                                             <a href="management.php">About Us <i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
                                                 <li><a href="management.php">Management </a></li>
-                                                <li><a href="mandatory-information.php">Mandatory Information</a></li>
+                                                <li><a href="mandatory-information-table.php">Mandatory Information</a></li>
                                             </ul>
                                         </li>
                                         <li>
                                             <a href="teacher-details.php">Academics<i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
                                                 <li><a href="teacher-details.php">Teacher Details</a></li>
-                                                <li><a href="fees.php">Fees</a></li>
+                                                <li><a href="fees.php">Fees Structure</a></li>
                                                 <li><a href="rules-and-guidelines.php">Rules and Guidelines</a></li>
                                                 <!-- <li><a href="#">Transfer Certificates</a></li> -->
                                             </ul>
                                         </li>
-                                        <li>
+                                        <!-- <li>
                                             <a href="gallery.php?tab=Achievements">Beyond Academics<i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
                                                 <li><a href="gallery.php?tab=Achievements">Achievements</a></li>
@@ -150,7 +150,7 @@
                                                 <li><a href="gallery.php?tab=trips-and-excursions">Trips and Excursions</a></li>
                                                 <li><a href="gallery.php?tab=special-days">Special Days</a></li>
                                             </ul>
-                                        </li>
+                                        </li> -->
                                         <li><a href="result.php">Result </a></li>
                                         <li><a href="gallery.php?tab=gallery">Gallery </a></li>
                                         <li><a href="campus.php">Campus & Facilities </a></li>
@@ -161,8 +161,8 @@
 												<li><a href="#">Admission 2024-2025</a></li>
 											</ul>
 										</li> -->
-                                        <li><a href="career.php">Career</a></li>
-                                        <li><a href="contact.php">Contact Us</a></li>
+                                        <!-- <li><a href="career.php">Career</a></li> -->
+                                        <!-- <li><a href="contact.php">Contact Us</a></li> -->
                                     </ul>
                                 </nav>
                             </div>

@@ -31,15 +31,9 @@
               </div>
               <div class="single-content">
                 <span>Shree Balaji Gurukul</span>
-                <h4>About School</h4>
+               <h4>About</h4>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Incidunt maiores temporibus rerum id quas, aperiam
-                  doloremque assumenda nemo pariatur inventore eius velit
-                  recusandae <br />Magnam assumenda eligendi iste
-                  sequi autem iure voluptates accusantium nesciunt minus
-                  aliquam numquam dolorum doloribus doloremque natus, est
-                  nisi earum cum libero.
+                We believe education is enriched by the unique perspectives and experiences each student brings, and we are committed to fostering an environment that celebrates and values diversity in all its forms. It is central to our mission to embrace and encourage diversity, equity and inclusion (DE&I). 
                 </p>
               </div>
             </div>
@@ -91,7 +85,7 @@
 
 
 <!-- Campus Facilities Section Start -->
-<section class="portfolio section" style="background: none;">
+<!-- <section class="portfolio section" style="background: none;">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -154,12 +148,12 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!--/  Campus Facilities Section End -->
 
 
 <!-- Gallery Section Start -->
-<section class="portfolio section">
+<!-- <section class="portfolio section">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -211,7 +205,7 @@
     </div>
   </div>
 
-</section>
+</section> -->
 <!--/  Gallery Section End -->
 
 
