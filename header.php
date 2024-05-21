@@ -43,7 +43,7 @@
 
 <body style="overflow-x: hidden !important;" onLoad="scrollDiv_init()">
     <!-- Preloader -->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="loader">
             <div class="loader-outter"></div>
             <div class="loader-inner"></div>
@@ -54,7 +54,7 @@
                 </svg>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Preloader -->
     <!-- Get Pro Button -->
     <ul class="pro-features">
