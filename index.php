@@ -31,11 +31,11 @@
               </div>
               <div class="single-content">
                 <span>Shree Balaji Gurukul</span>
-<<<<<<< HEAD
+
                <h4>About</h4>
-=======
+
                 <h4>About</h4>
->>>>>>> d76bc6b00d27989109af2b11d8fb2f588cca5672
+
                 <p>
                 We believe education is enriched by the unique perspectives and experiences each student brings, and we are committed to fostering an environment that celebrates and values diversity in all its forms. It is central to our mission to embrace and encourage diversity, equity and inclusion (DE&I). 
                 </p>
