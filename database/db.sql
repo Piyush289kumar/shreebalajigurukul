@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 21, 2024 at 03:53 AM
+-- Generation Time: May 31, 2024 at 04:53 AM
 -- Server version: 10.11.7-MariaDB-cll-lve
 -- PHP Version: 7.2.34
 
@@ -626,7 +626,7 @@ INSERT INTO `notification` (`nid`, `ndate`, `ntitle`, `ntype`, `display`, `userI
 (42, '2024-05-09', 'Research Breakthroughs', 'Achievements', 'Yes', 'admin', 'Yes'),
 (43, '2024-04-15', 'Academic Excellence', 'Achievements', 'Yes', 'admin', 'Yes'),
 (44, '2024-05-18', 'Innovative Student Startups Secure Funding', 'Latest_News', 'No', 'admin', 'Yes'),
-(45, '2024-05-25', 'Green Campus Initiative Reduces Carbon Footprint', 'Latest_News', 'Yes', 'admin', 'Yes'),
+(45, '2024-05-25', 'Green Campus Initiative Reduces Carbon Footprint', 'Latest_News', 'No', 'admin', 'Yes'),
 (46, '2024-06-05', 'Robotics Competition Winners Announced', 'Latest_News', 'Yes', 'admin', 'Yes'),
 (47, '2024-05-17', 'School Implements Mental Health Initiatives', 'Latest_News', 'No', 'admin', 'Yes'),
 (48, '2024-08-18', 'Virtual Reality Labs Enhance Learning', 'Latest_News', 'Yes', 'admin', 'Yes'),
@@ -640,8 +640,8 @@ INSERT INTO `notification` (`nid`, `ndate`, `ntitle`, `ntype`, `display`, `userI
 (56, '2024-06-25', 'Student-Led Sustainability Initiative', 'Upcoming_News', 'Yes', 'admin', 'Yes'),
 (57, '2024-07-12', 'Virtual Career Fair', 'Upcoming_News', 'Yes', 'admin', 'Yes'),
 (58, '2024-06-16', 'Campus Innovation Hub', 'Upcoming_News', 'Yes', 'admin', 'Yes'),
-(59, '2024-05-30', 'Student-led Mental Health Awareness Campaign', 'Latest_News', 'Yes', 'admin', 'Yes'),
-(60, '2024-05-24', 'Innovative Research Project Awarded Grant', 'Latest_News', 'Yes', 'admin', 'Yes'),
+(59, '2024-05-30', 'Student-led Mental Health Awareness Campaign', 'Latest_News', 'No', 'admin', 'Yes'),
+(60, '2024-05-24', 'Innovative Research Project Awarded Grant', 'Latest_News', 'No', 'admin', 'Yes'),
 (61, '2024-06-04', 'Virtual Career Fair Success', 'Latest_News', 'Yes', 'admin', 'Yes'),
 (62, '2024-05-19', 'Campus Sustainability Initiative', 'Latest_News', 'No', 'admin', 'Yes'),
 (63, '2024-05-12', 'New Scholarship Program Launched', 'Latest_News', 'Yes', 'admin', 'Yes'),
@@ -912,7 +912,16 @@ INSERT INTO `user_log` (`log_id`, `user_id`, `username`, `user_role`, `log_time`
 (68, '186', 'admin', 'Admin', '09:06:39 AM', '16-05-2024'),
 (69, '186', 'admin', 'Admin', '09:07:14 AM', '16-05-2024'),
 (70, '186', 'admin', 'Admin', '05:03:29 AM', '20-05-2024'),
-(71, '186', 'admin', 'Admin', '02:40:46 AM', '21-05-2024');
+(71, '186', 'admin', 'Admin', '02:40:46 AM', '21-05-2024'),
+(72, '186', 'admin', 'Admin', '03:41:52 PM', '23-05-2024'),
+(73, '186', 'admin', 'Admin', '04:17:32 PM', '26-05-2024'),
+(74, '186', 'admin', 'Admin', '11:55:47 AM', '27-05-2024'),
+(75, '186', 'admin', 'Admin', '05:11:03 PM', '27-05-2024'),
+(76, '186', 'admin', 'Admin', '08:18:31 AM', '29-05-2024'),
+(77, '186', 'admin', 'Admin', '08:19:12 AM', '29-05-2024'),
+(78, '186', 'admin', 'Admin', '04:24:13 PM', '29-05-2024'),
+(79, '186', 'admin', 'Admin', '04:26:10 PM', '29-05-2024'),
+(80, '186', 'admin', 'Admin', '04:26:57 PM', '29-05-2024');
 
 --
 -- Indexes for dumped tables
@@ -1065,7 +1074,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `user_log`
 --
 ALTER TABLE `user_log`
-  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `log_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
