@@ -57,20 +57,15 @@
 <section>
   <div class="container-fluid">
     <div class="row">
-
-
       <div class="col-12 admissionSection">
         <h3>Admissions for the Academic Session 2024-25 are open</h3>
-        <p>
-          For more details, please contact: +91-1234567890 , +91-123456789
-        </p>
+        <p>For more details, please contact: +91-70009-79179</p>
         <a href="addmission.php" class="btn text-white">Click here for more details</a>
       </div>
     </div>
   </div>
 </section>
 <!-- Admission Info Section Start  -->
-
 <!-- Brochures Info Section Start  -->
 <section>
   <div class="container-fuild brochuresSection">
