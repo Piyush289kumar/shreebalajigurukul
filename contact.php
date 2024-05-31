@@ -29,8 +29,8 @@
           <div class="single-info">
             <i class="icofont icofont-ui-call"></i>
             <div class="content">
-              <h3>+(000) 1234 56789</h3>
-              <p>info@company.com</p>
+              <h3>+91 70009-79179</h3>
+              <p>adityakoshta23@gmail.com</p>
             </div>
           </div>
         </div>
@@ -71,10 +71,10 @@
           </div> -->
         </div>
         <div class="col-lg-6" style="background: #fff;">
-          <div class="contact-us-form">
+          <!-- <div class="contact-us-form">
             <h2>Contact With Us</h2>
             <p>If you have any questions please fell free to contact with us.</p>
-            <!-- Form -->
+            
             <form class="form" method="post">
               <div class="row">
                 <div class="col-lg-6">
@@ -109,8 +109,16 @@
                 </div>
               </div>
             </form>
-            <!--/ End Form -->
-          </div>
+            
+          </div> -->
+
+
+
+          <iframe
+				src="https://docs.google.com/forms/d/e/1FAIpQLScGw_usXBN4EJr_LcPCTXO8V-2bzNpNkDk5ESuJ6g6VoIeffQ/viewform"
+				style="border:0px #ffffff none;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px"
+				marginwidth="0px" height="100%" width="100%" allowfullscreen></iframe>
+
         </div>
       </div>
     </div>
