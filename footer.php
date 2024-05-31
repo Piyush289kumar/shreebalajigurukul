@@ -7,12 +7,12 @@
                 <div class="col-lg-6 col-md-6 col-12">
                     <div class="single-footer">
                         <h2>About Us</h2>
-                        <p>
-                            Lorem ipsum dolor sit am consectetur adipisicing elit do
-                            eiusmod tempor incididunt ut labore dolore magna.
-                        </p>
+                        <p>We believe education is enriched by the unique perspectives and experiences each student
+                            brings, and we are committed to fostering an environment that celebrates and values
+                            diversity in all its forms. It is central to our mission to embrace and encourage diversity,
+                            equity and inclusion (DE&I)</p>
                         <!-- Social -->
-                        <ul class="social">
+                        <!-- <ul class="social">
                             <li>
                                 <a href="#"><i class="icofont-facebook"></i></a>
                             </li>
@@ -25,7 +25,7 @@
                             <li>
                                 <a href="#"><i class="icofont-pinterest"></i></a>
                             </li>
-                        </ul>
+                        </ul> -->
                         <!-- End Social -->
                     </div>
                 </div>
@@ -33,38 +33,47 @@
                     <div class="single-footer f-link">
                         <h2>Quick Links</h2>
                         <div class="row">
-                            <div class="col-lg-4 col-md-6 col-12">
+                            <!-- <div class="col-lg-4 col-md-6 col-12"> -->
+                            <div class="col-lg-6 col-md-6 col-12">
                                 <ul>
                                     <li>
                                         <a href="index.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a>
                                     </li>
                                     <li>
-                                        <a href="management.php"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a>
+                                        <a href="management.php"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>About Us</a>
                                     </li>
                                     <li>
-                                        <a href="contact.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a>
+                                        <a href="contact.php"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>Contact Us</a>
                                     </li>
                                     <li>
-                                        <a href="addmission.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Addmission</a>
+                                        <a href="addmission.php"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>Addmission</a>
                                     </li>
                                     <li>
-                                        <a href="mandatory-information.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Mandatory Info.</a>
+                                        <a href="mandatory-information.php"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>Mandatory Info.</a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-12 footerLinks">
+                            <!-- <div class="col-lg-4 col-md-6 col-12 footerLinks"> -->
+                            <div class="col-lg-6 col-md-6 col-12 footerLinks">
                                 <ul>
                                     <li>
-                                        <a href="teacher-details.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Academics</a>
+                                        <a href="teacher-details.php"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>Academics</a>
                                     </li>
                                     <li>
-                                        <a href="teacher-details.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Teacher Details</a>
+                                        <a href="teacher-details.php"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>Teacher Details</a>
                                     </li>
                                     <li>
                                         <a href="fees.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Fees</a>
                                     </li>
                                     <li>
-                                        <a href="rules-and-guidelines.php"><i class="fa fa-caret-right" aria-hidden="true"></i>Guidelines</a>
+                                        <a href="rules-and-guidelines.php"><i class="fa fa-caret-right"
+                                                aria-hidden="true"></i>Guidelines</a>
                                     </li>
                                 </ul>
                             </div>
@@ -87,7 +96,7 @@
                                     </li>
                                 </ul>
                             </div> -->
-                            <div class="col-lg-3 col-md-6 col-12 footerLinks">
+                            <!-- <div class="col-lg-3 col-md-6 col-12 footerLinks">
                                 <ul>
                                     <li>
                                         <a href="gallery.php?tab=Achievements"><i class="fa fa-caret-right" aria-hidden="true"></i>Achievement</a>
@@ -105,41 +114,41 @@
                                         <a href="gallery.php?tab=trips-and-excursions"><i class="fa fa-caret-right" aria-hidden="true"></i>Trips</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
                 <!-- <div class="col-lg-3 col-md-6 col-12">
-						<div class="single-footer">
-							<h2>Open Hours</h2>
-							<p>
-								Lorem ipsum dolor sit ame consectetur adipisicing elit do
-								eiusmod tempor incididunt.
-							</p>
-							<ul class="time-sidual">
-								<li class="day">Mon - Sat <span>08.00-02.00</span></li>
-								<li class="day">Mon - Sat <span>08.00-02.00</span></li>
-								<li class="day">Mon - Sat <span>08.00-02.00</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-12">
-						<div class="single-footer">
-							<h2>Newsletter</h2>
-							<p>
-								subscribe to our newsletter to get allour news in your inbox..
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-							</p>
-							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-								<input name="email" placeholder="Email Address" class="common-input"
-									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
-									required="" type="email" />
-								<button class="button">
-									<i class="icofont icofont-paper-plane"></i>
-								</button>
-							</form>
-						</div>
-					</div> -->
+                        <div class="single-footer">
+                            <h2>Open Hours</h2>
+                            <p>
+                                Lorem ipsum dolor sit ame consectetur adipisicing elit do
+                                eiusmod tempor incididunt.
+                            </p>
+                            <ul class="time-sidual">
+                                <li class="day">Mon - Sat <span>08.00-02.00</span></li>
+                                <li class="day">Mon - Sat <span>08.00-02.00</span></li>
+                                <li class="day">Mon - Sat <span>08.00-02.00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>Newsletter</h2>
+                            <p>
+                                subscribe to our newsletter to get allour news in your inbox..
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            </p>
+                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                                <input name="email" placeholder="Email Address" class="common-input"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'"
+                                    required="" type="email" />
+                                <button class="button">
+                                    <i class="icofont icofont-paper-plane"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div> -->
             </div>
         </div>
     </div>
@@ -152,7 +161,7 @@
                     <div class="copyright-content">
                         <p>
                             © Copyright 2024 | All Rights Reserved by
-                            <a href="index.php" target="_blank">abcdbefg.com</a>
+                            <a href="index.php" target="_blank">Aditya Koshta</a>
                         </p>
                     </div>
                 </div>
@@ -233,9 +242,8 @@
             ReachedMaxScroll = DivElmnt1.scrollTop >= (DivElmnt1.scrollHeight - DivElmnt1.offsetHeight);
         } else {
             ReachedMaxScroll = (DivElmnt1.scrollTop == 0 || DivElmnt2.scrollTop == 0 || DivElmnt3.scrollTop == 0) ? false : true;
-            DivElmnt1.scrollTop = PreviousScrollTop;           
+            DivElmnt1.scrollTop = PreviousScrollTop;
             PreviousScrollTop--;
-            
         }
     }
     function pauseDiv() {
