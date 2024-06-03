@@ -96,7 +96,7 @@
                     <div class="col-lg-4 col-md-4 col-12">
                         <!-- Contact -->
                         <ul class="top-link">
-                            <li><a href="addmission.php">Addmission</a></li>
+                            <li><a href="addmission.php">Admission</a></li>
                             <li><a href="./admin/index.php" id="login">Login</a></li>
                         </ul>
                         <!-- End Contact -->
