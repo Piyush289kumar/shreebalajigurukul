@@ -1,12 +1,12 @@
 <?php include "header.php";
 if ($_SESSION['user_role'] == 0) {
     header("Location:{$hostname}/admin/");
-};
-include("config.php");
+}
+;
+include ("config.php");
 $user_id_getaddbar = $_GET['id'];
 $file_name = '';
 if (isset($_POST['submit'])) {
-
     if (empty($_FILES['new-image']['name'])) {
         $save_img_name = $_POST['old-image'];
     } else {
@@ -35,24 +35,22 @@ if (isset($_POST['submit'])) {
             }
         }
     }
-
     $ntitle = mysqli_real_escape_string($conn, $_POST['atitle']);
     $ndes = mysqli_real_escape_string($conn, $_POST['smdes']);
-
     $sql_update_user = "UPDATE school_management SET smname = '{$ntitle}', smdes = '{$ndes}', smimg = '{$save_img_name}' WHERE smid ='{$user_id_getaddbar}'";
     if (mysqli_query($conn, $sql_update_user)) {
-?>
+        ?>
         <script>
             alert('Record is Update successfully !!')
         </script>
-    <?php
+        <?php
         echo "<script>window.location.href='$hostname/admin/management-read.php'</script>";
     } else {
-    ?>
+        ?>
         <script>
             alert('Record is not Update !!')
         </script>
-<?php
+        <?php
     }
 }
 ?>
@@ -60,47 +58,50 @@ if (isset($_POST['submit'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="admin-heading" style='font-size:25px; margin-bottom:25px;'>Modify Management Member Details</h1>
+                <h1 class="admin-heading" style='font-size:25px; margin-bottom:25px;'>Modify Management Member Details
+                </h1>
             </div>
             <div class="col-md-2">
-                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="management-read.php"><i class="fa-solid fa-arrow-left"></i>
+                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="management-read.php"><i
+                        class="fa-solid fa-arrow-left"></i>
                     Back</a>
             </div>
             <div class="col-md-offset-4 col-md-4">
                 <!-- Form Start -->
                 <!-- PHP CODE -->
-                <?php include("config.php");
+                <?php include ("config.php");
                 $sql_userdata_show_by_id = "SELECT * FROM school_management WHERE smid = '{$user_id_getaddbar}'";
                 $result_sql_userdata_show_by_id = mysqli_query($conn, $sql_userdata_show_by_id) or die("Query Die!!");
                 if (mysqli_num_rows($result_sql_userdata_show_by_id) > 0) {
                     while ($row = mysqli_fetch_assoc($result_sql_userdata_show_by_id)) {
-                ?>
-                        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
+                        ?>
+                        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data"
+                            autocomplete="off">
                             <div class="form-group">
-                                <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['smid'] ?>" placeholder="">
+                                <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['smid'] ?>"
+                                    placeholder="">
                             </div>
                             <div class="form-group">
                                 <label>Member Name</label>
-                                <input type="text" name="atitle" class="form-control" value="<?php echo $row['smname'] ?>" placeholder="Member Name" required>
+                                <input type="text" name="atitle" class="form-control" value="<?php echo $row['smname'] ?>"
+                                    placeholder="Member Name" required>
                             </div>
-
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Description</label>
-                                <textarea name="smdes" class="form-control"
-                                    rows="5"><?php echo ($row['smdes']) ?></textarea>
+                                <textarea name="smdes" class="form-control" rows="5"><?php echo ($row['smdes']) ?></textarea>
                             </div>
-
-
                             <div class="form-group">
                                 <label for="">Member Picture</label>
                                 <input type="file" name="new-image">
-                                <img src="upload/school-management-member/<?php echo $row['smimg']; ?>" height="150px" style="border-radius: 4px; margin-top:12px;">
+                                <img src="upload/school-management-member/<?php echo $row['smimg']; ?>" height="150px"
+                                    style="border-radius: 4px; margin-top:12px;">
                                 <input type="hidden" name="old-image" value="<?php echo $row['smimg']; ?>">
                             </div>
-                            <input type="submit" name="submit" class="btn btn-primary" style="border-radius:16px;" value="Update" required />
+                            <input type="submit" name="submit" class="btn btn-primary" style="border-radius:16px;"
+                                value="Update" required />
                         </form>
                         <!-- /Form -->
-                <?php
+                        <?php
                     }
                 } ?>
                 <!-- PHP CODE -->
