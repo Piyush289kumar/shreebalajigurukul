@@ -1,5 +1,5 @@
 <?php include "header.php";
-include("config.php");
+include ("config.php");
 if ($_SESSION['user_role'] == 0) {
     echo "<script>window.location.href='$hostname/admin/'</script>";
 } ?>
@@ -10,7 +10,8 @@ if ($_SESSION['user_role'] == 0) {
                 <h1 class="admin-heading">Add Gallery Picture</h1>
             </div>
             <div class="col-md-2">
-                <a class="add-new" style="background:#E1412E; border-radius:16px; margin-bottom:25px;" href="achievement-read.php"><i class="fa-solid fa-arrow-left"></i> Back</a>
+                <a class="add-new" style="background:#E1412E; border-radius:16px; margin-bottom:25px;"
+                    href="achievement-read.php"><i class="fa-solid fa-arrow-left"></i> Back</a>
             </div>
             <div class="col-md-offset-3 col-md-6">
                 <!-- Form Start -->
@@ -34,8 +35,7 @@ if ($_SESSION['user_role'] == 0) {
                             if (isset($img)) {
                                 $output_img = date("d_M_Y_h_i_sa") . "_" . basename($_FILES['fileToUpload']["name"]) . ".webp";
                                 imagewebp($img, "upload/achievement/" . $output_img, 100);
-
-                                include("config.php");
+                                include ("config.php");
                                 $ndate = mysqli_real_escape_string($conn, $_POST['adate']);
                                 $ntitle = mysqli_real_escape_string($conn, $_POST['atitle']);
                                 $ntype = mysqli_real_escape_string($conn, $_POST['atype']);
@@ -43,27 +43,27 @@ if ($_SESSION['user_role'] == 0) {
                                 $sql_insert_user = "INSERT INTO achievement (adate, atitle, atype, userId, aimg)
                                     values('{$ndate}','{$ntitle}','{$ntype}','{$userId}','{$output_img}')";
                                 if (mysqli_query($conn, $sql_insert_user)) {
-                ?>
+                                    ?>
                                     <script>
                                         alert('Record is added successfully !!')
                                     </script>
-                                <?php
+                                    <?php
                                     echo "<script>window.location.href='$hostname/admin/achievement-read.php'</script>";
                                 } else {
-                                ?>
+                                    ?>
                                     <script>
                                         alert('Record is Not added !!')
                                     </script>
-                <?php
+                                    <?php
                                     echo "<script>window.location.href='$hostname/admin/achievement-read.php'</script>";
                                 }
                             }
                         }
                     }
                 }
-
                 ?>
-                <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" autocomplete="off" enctype="multipart/form-data">
+                <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" autocomplete="off"
+                    enctype="multipart/form-data">
                     <div class="form-group">
                         <label>Date</label>
                         <input type="date" name="adate" class="form-control" placeholder="Date" required>
@@ -89,7 +89,8 @@ if ($_SESSION['user_role'] == 0) {
                         <label for="exampleInputPassword1">Picture</label>
                         <input type="file" name="fileToUpload" required>
                     </div>
-                    <input type="submit" name="save" class="btn btn-primary" style="border-radius:16px;" value="Save" required />
+                    <input type="submit" name="save" class="btn btn-primary" style="border-radius:16px;" value="Save"
+                        required />
                 </form>
                 <!-- Form End-->
             </div>
