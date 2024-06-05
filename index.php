@@ -1,5 +1,4 @@
 <?php include 'header.php' ?>
-
 <!-- Slider Area -->
 <section class="slider">
   <div class="hero-slider">
@@ -15,7 +14,6 @@
   </div>
 </section>
 <!--/ End Slider Area -->
-
 <!-- Start Schedule Area -->
 <section class="schedule">
   <div class="container">
@@ -31,13 +29,12 @@
               </div>
               <div class="single-content">
                 <span>Shree Balaji Gurukul</span>
-
-               <h4>About</h4>
-
                 <h4>About</h4>
-
+                <h4>About</h4>
                 <p>
-                We believe education is enriched by the unique perspectives and experiences each student brings, and we are committed to fostering an environment that celebrates and values diversity in all its forms. It is central to our mission to embrace and encourage diversity, equity and inclusion (DE&I). 
+                  We believe education is enriched by the unique perspectives and experiences each student brings, and
+                  we are committed to fostering an environment that celebrates and values diversity in all its forms. It
+                  is central to our mission to embrace and encourage diversity, equity and inclusion (DE&I).
                 </p>
               </div>
             </div>
@@ -48,11 +45,9 @@
   </div>
 </section>
 <!--/End Start schedule Area -->
-
 <!-- Notification Area Section Include -->
 <?php include 'notificationSection.php' ?>
 <!-- Notification Area Section Include -->
-
 <!-- Admission Info Section Start  -->
 <section>
   <div class="container-fluid">
@@ -77,12 +72,9 @@
   </div>
 </section>
 <!-- Brochures Info Section Start  -->
-
 <!-- Academic Achievement Start portfolio -->
 <?php include 'achievementSection.php' ?>
 <!--/ Academic Achievement End portfolio -->
-
-
 <!-- Campus Facilities Section Start -->
 <!-- <section class="portfolio section" style="background: none;">
   <div class="container">
@@ -112,7 +104,6 @@
           </div>
         </div>
       </div>
-
       <div class="col-md-4 mx-2 mx-md-0 mb-2 mb-md-0">
         <div class="row">
           <div class="col-6" style="padding: 0; margin: 0">
@@ -122,14 +113,12 @@
             <img src="img/sport.jpg" alt="Error" />
           </div>
         </div>
-
         <div class="row">
           <div class="col-12" style="padding: 0; margin-top: 5px">
             <img src="img/sport.jpg" alt="Error" />
           </div>
         </div>
       </div>
-
       <div class="col-md-4 mx-2 mx-md-0 mb-2 mb-md-0">
         <div class="row">
           <div class="col-12" style="padding: 0; margin-bottom: 5px">
@@ -149,8 +138,6 @@
   </div>
 </section> -->
 <!--/  Campus Facilities Section End -->
-
-
 <!-- Gallery Section Start -->
 <!-- <section class="portfolio section">
   <div class="container">
@@ -165,7 +152,6 @@
   </div>
   <div class="container">
     <div class="row">
-
       <div class="col-11 mx-3 mx-md-0 mb-2 mb-md-0">
         <div class="row">
           <div class="col-4 mb-2" style="padding: 0; margin: 0">
@@ -178,7 +164,6 @@
             <img src="img/sport.jpg" alt="Error" />
           </div>
         </div>
-
         <div class="row">
           <div class="col-4 mb-2" style="padding: 0; margin: 0">
             <img src="img/sport.jpg" alt="Error" />
@@ -191,115 +176,105 @@
           </div>
         </div>
       </div>
-
-
-
-
     </div>
-
     <div class="row">
       <div class="col-md-12 text-center mt-3">
         <a href="gallery.php?tab=gallery" class="btn text-white">View all</a>
       </div>
     </div>
   </div>
-
 </section> -->
 <!--/  Gallery Section End -->
-
-
 <!-- Start Blog Area -->
 <!-- <section class="blog section" id="blog">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>Event</h2>
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Blog ->
-						<div class="single-news">
-							<div class="news-head">
-								<img src="img/child1.jpg" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">27 Dec, 2023</div>
-									<h2><a href="blog-single.html">Some Heading</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
-								</div>
-							</div>
-						</div>
-						<!-- End Single Blog ->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Blog ->
-						<div class="single-news">
-							<div class="news-head">
-								<img src="img/child1.jpg" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">23 Dec, 2023</div>
-									<h2><a href="blog-single.html">Some Heading</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
-								</div>
-							</div>
-						</div>
-						<!-- End Single Blog ->
-					</div>
-					<div class="col-lg-4 col-md-6 col-12">
-						<!-- Single Blog ->
-						<div class="single-news">
-							<div class="news-head">
-								<img src="img/child1.jpg" alt="#">
-							</div>
-							<div class="news-body">
-								<div class="news-content">
-									<div class="date">02 Jan, 2024</div>
-									<h2><a href="blog-single.html">Some Heading</a></h2>
-									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
-								</div>
-							</div>
-						</div>
-						<!-- End Single Blog ->
-					</div>
-				</div>
-			</div>
-		</section> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Event</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <!-- Single Blog ->
+            <div class="single-news">
+              <div class="news-head">
+                <img src="img/child1.jpg" alt="#">
+              </div>
+              <div class="news-body">
+                <div class="news-content">
+                  <div class="date">27 Dec, 2023</div>
+                  <h2><a href="blog-single.html">Some Heading</a></h2>
+                  <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Single Blog ->
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <!-- Single Blog ->
+            <div class="single-news">
+              <div class="news-head">
+                <img src="img/child1.jpg" alt="#">
+              </div>
+              <div class="news-body">
+                <div class="news-content">
+                  <div class="date">23 Dec, 2023</div>
+                  <h2><a href="blog-single.html">Some Heading</a></h2>
+                  <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Single Blog ->
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <!-- Single Blog ->
+            <div class="single-news">
+              <div class="news-head">
+                <img src="img/child1.jpg" alt="#">
+              </div>
+              <div class="news-body">
+                <div class="news-content">
+                  <div class="date">02 Jan, 2024</div>
+                  <h2><a href="blog-single.html">Some Heading</a></h2>
+                  <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Single Blog ->
+          </div>
+        </div>
+      </div>
+    </section> -->
 <!-- End Blog Area -->
-
 <!-- Start Newsletter Area -->
 <!-- <section class="newsletter section">
-			<div class="container">
-				<div class="row ">
-					<div class="col-lg-6  col-12">
-						<!-- Start Newsletter Form -
-						<div class="subscribe-text ">
-							<h6>Sign up for newsletter</h6>
-							<p class="">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,<br> homero alterum.</p>
-						</div>
-						<!-- End Newsletter Form -
-					</div>
-					<div class="col-lg-6  col-12">
-						<!-- Start Newsletter Form -
-						<div class="subscribe-form ">
-							<form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
-								<input name="EMAIL" placeholder="Your email address" class="common-input" onfocus="this.placeholder = ''"
-									onblur="this.placeholder = 'Your email address'" required="" type="email">
-								<button class="btn">Subscribe</button>
-							</form>
-						</div>
-						<!-- End Newsletter Form 
-					</div>
-				</div>
-			</div>
-		</section> -->
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-6  col-12">
+            <!-- Start Newsletter Form -
+            <div class="subscribe-text ">
+              <h6>Sign up for newsletter</h6>
+              <p class="">Cu qui soleat partiendo urbanitas. Eum aperiri indoctum eu,<br> homero alterum.</p>
+            </div>
+            <!-- End Newsletter Form -
+          </div>
+          <div class="col-lg-6  col-12">
+            <!-- Start Newsletter Form -
+            <div class="subscribe-form ">
+              <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                <input name="EMAIL" placeholder="Your email address" class="common-input" onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = 'Your email address'" required="" type="email">
+                <button class="btn">Subscribe</button>
+              </form>
+            </div>
+            <!-- End Newsletter Form 
+          </div>
+        </div>
+      </div>
+    </section> -->
 <!-- /End Newsletter Area -->
 <!-- Old Section Store as Temp -->
-
-<?php include('footer.php') ?>
+<?php include ('footer.php') ?>

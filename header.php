@@ -15,7 +15,9 @@
     <!-- Favicon -->
     <link rel="icon" href="img/logo/graduation-cap.png" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Nice Select CSS -->
@@ -42,7 +44,7 @@
 </head>
 
 <body style="overflow-x: hidden !important;" onLoad="scrollDiv_init()">
-  <!-- Preloader -->
+    <!-- Preloader -->
     <div class="preloader">
         <div class="preloader">
             <div class="loader">
@@ -56,30 +58,29 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
     <!-- End Preloader -->
-
     <!-- Get Pro Button -->
     <ul class="pro-features">
-			<a class="get-pro">Enquiry</a>
-            <a href="https://api.whatsapp.com/send?phone=919867870829&text=Hello!%20Can I get more Information about it." class="btn" style="background: #25D366; font-size: 25px;"><i class="fa-brands fa-whatsapp"></i></a>
-
-            <a  href="tel:919867870829" class="btn" style="background: #1A76D1;; font-size: 25px;"><i class="fa fa-phone"></i></a>
-
-            <a href = "mailto: abc@gmail.com" class="btn" style="background: #ff2e00; font-size: 25px;"><i class="fa-solid fa-envelope"></i></a>
-
-			<!-- <li class="big-title">Big Title</li>
-			<li class="title">Title</li>
-			<li>Point 1</li>
-			<li>Point 2</li>
-			<li>Point 3</li>
-			<li>Point 4</li>
-			<li>Point 5</li>
-			<div class="button">
-				<a href="#" target="_blank" class="btn">Button 1</a>
-				<a href="#" target="_blank" class="btn">Button 2</a>
-			</div> -->
-		</ul>
+        <a class="get-pro">Enquiry</a>
+        <a href="https://api.whatsapp.com/send?phone=919867870829&text=Hello!%20Can I get more Information about it."
+            class="btn" style="background: #25D366; font-size: 25px;"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="tel:919867870829" class="btn" style="background: #1A76D1;; font-size: 25px;"><i
+                class="fa fa-phone"></i></a>
+        <a href="mailto: abc@gmail.com" class="btn" style="background: #ff2e00; font-size: 25px;"><i
+                class="fa-solid fa-envelope"></i></a>
+        <!-- <li class="big-title">Big Title</li>
+            <li class="title">Title</li>
+            <li>Point 1</li>
+            <li>Point 2</li>
+            <li>Point 3</li>
+            <li>Point 4</li>
+            <li>Point 5</li>
+            <div class="button">
+                <a href="#" target="_blank" class="btn">Button 1</a>
+                <a href="#" target="_blank" class="btn">Button 2</a>
+            </div> -->
+    </ul>
     <!-- Header Area -->
     <header class="header">
         <!-- Topbar -->
@@ -131,11 +132,13 @@
                                             <a href="management.php">About Us <i class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
                                                 <li><a href="management.php">Management </a></li>
-                                                <li><a href="mandatory-information-table.php">Mandatory Information</a></li>
+                                                <li><a href="mandatory-information-table.php">Mandatory Information</a>
+                                                </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="teacher-details.php">Academics<i class="icofont-rounded-down"></i></a>
+                                            <a href="teacher-details.php">Academics<i
+                                                    class="icofont-rounded-down"></i></a>
                                             <ul class="dropdown">
                                                 <li><a href="teacher-details.php">Teacher Details</a></li>
                                                 <li><a href="fees.php">Fees Structure</a></li>
@@ -158,12 +161,12 @@
                                         <li><a href="gallery.php?tab=gallery">Gallery </a></li>
                                         <li><a href="campus.php">Campus & Facilities </a></li>
                                         <!-- <li>
-											<a href="#">Admission <i class="icofont-rounded-down"></i></a>
-											<ul class="dropdown">
-												<li><a href="#">Admission 2023-2024</a></li>
-												<li><a href="#">Admission 2024-2025</a></li>
-											</ul>
-										</li> -->
+                                            <a href="#">Admission <i class="icofont-rounded-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">Admission 2023-2024</a></li>
+                                                <li><a href="#">Admission 2024-2025</a></li>
+                                            </ul>
+                                        </li> -->
                                         <!-- <li><a href="career.php">Career</a></li> -->
                                         <!-- <li><a href="contact.php">Contact Us</a></li> -->
                                     </ul>

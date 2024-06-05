@@ -1,10 +1,8 @@
 <?php
 include 'header.php';
 include 'config.php';
-
 $user_id_getaddbar = $_GET['tab'];
 $tabHeading = '';
-
 if ($user_id_getaddbar == 'gallery') {
 	$tabHeading = 'Gallery';
 } elseif ($user_id_getaddbar == 'Achievements') {
@@ -22,9 +20,7 @@ if ($user_id_getaddbar == 'gallery') {
 } else {
 	$tabHeading = 'Pictures';
 }
-
 ?>
-
 <!-- Breadcrumbs -->
 <div class="breadcrumbs overlay">
 	<div class="container">
@@ -45,7 +41,6 @@ if ($user_id_getaddbar == 'gallery') {
 	</div>
 </div>
 <!-- End Breadcrumbs -->
-
 <!-- Table -->
 <section>
 	<div class="container">
@@ -62,49 +57,39 @@ if ($user_id_getaddbar == 'gallery') {
 				</div>
 			</div>
 		</div>
-
 		<!-- Academic Achievement Start portfolio -->
 		<section>
-
 			<div class="container-fluid">
 				<div class="row mt-4">
-
 					<!-- PHP CODE -->
-					<?php include("config.php");
-					 if (isset($_GET['page_num_index'])) {
+					<?php include ("config.php");
+					if (isset($_GET['page_num_index'])) {
 						$page_num_index_by_addbar = $_GET['page_num_index'];
 					} else {
 						$page_num_index_by_addbar = 1;
 					}
 					$record_limit = 8;
 					$offset = ($page_num_index_by_addbar - 1) * $record_limit;
-
 					$sql_userdata_show_by_id = "SELECT * FROM achievement WHERE atype = '{$user_id_getaddbar}' AND active_record = 'Yes' ORDER BY aid DESC LIMIT {$offset},{$record_limit}";
 					$result_sql_userdata_show_by_id = mysqli_query($conn, $sql_userdata_show_by_id) or die("Query Die!!");
 					if (mysqli_num_rows($result_sql_userdata_show_by_id) > 0) {
 						while ($row = mysqli_fetch_assoc($result_sql_userdata_show_by_id)) {
-					?>
-
+							?>
 							<div class="col-md-4 my-4" style="cursor: pointer;">
-								<img src="admin/upload/achievement/<?php echo $row['aimg']; ?>" alt="Error" style="border: 4px solid #1a76d1; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+								<img src="admin/upload/achievement/<?php echo $row['aimg']; ?>" alt="Error"
+									style="border: 4px solid #1a76d1; border-top-left-radius: 8px; border-top-right-radius: 8px;">
 								<!-- <p class="text-center py-1 mb-2" style="height: 60px; overflow-y: scroll; scrollbar-width: none; color: #fff; background: #1a76d1; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; padding:0px 2px;"><php echo $row['atitle'] ?></p> -->
 							</div>
-
 						<?php }
 					} else {
 						?>
-
 						<div class="col-md-12 mx-5 text-center p-5" style="cursor: pointer;">
 							<h1 style='color:red;'>No Record Found...!</h1>
 						</div>
-					<?php
-
+						<?php
 					} ?>
-
 				</div>
 			</div>
-
-
 			<!-- Pagination PHHP CODE -->
 			<?php
 			$sql_user_show_by_page = "SELECT * FROM achievement WHERE atype = '{$user_id_getaddbar}' AND active_record = 'Yes'";
@@ -130,12 +115,9 @@ if ($user_id_getaddbar == 'gallery') {
 				echo ("</ul>");
 			}
 			?>
-
 		</section>
 		<!--/ Academic Achievement End portfolio -->
-
 	</div>
 </section>
 <!-- Table -->
-
 <?php include 'footer.php' ?>
